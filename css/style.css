@@ -17,7 +17,7 @@ h1{
 }
 
 h2{
-    font-family: Overpass;
+    font-family: 'Overpass', sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 24px;
@@ -25,7 +25,7 @@ h2{
 }
 
 h3{
-    font-family: Overpass;
+    font-family: 'Overpass', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -35,7 +35,7 @@ h3{
 }
 
 h4{
-    font-family: Open Sans;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -44,7 +44,7 @@ h4{
 
 /* large body text */
 h5{
-    font-family: Open Sans;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -53,7 +53,7 @@ h5{
 
 /* body text */
 h6{
-    font-family: Open Sans;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -82,3 +82,33 @@ font-weight: normal;
 font-size: 9px;
 line-height: 12px; 
 */
+
+#aboutUs{
+    background-color: #E2A800;
+    width: 1146px;
+    height: 99px;
+    left: -9.96px;
+    top: 731.84px;
+    color: #474747;
+}
+
+.ourWork{
+    width: 258.33px;
+    height: 226.48px;
+    left: 38.93px;
+    top: -752.75px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #E2A800;
+    border-radius: 10px;
+}
+
+.workText{
+    padding: 10px;
+    font-family: 'Overpass', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: .5px;
+    color: #E2A800;
+    margin-top: 20px;
+}
