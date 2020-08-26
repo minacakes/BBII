@@ -1,0 +1,114 @@
+/* Color Palette 
+AAYHF Yellow background: #E2A800;
+AAYHF Dark Grey  background: #474747;
+AAYHF Lite Grey background: #DBDBDB;
+AAYHF Donate Greey background: #44C649; */
+
+/** Typography **/
+h1{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+
+/* or 100% */
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h3{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+/* or 100% */
+    letter-spacing: -0.05em;
+}
+
+h4{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* large body text */
+h5{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+/* body text */
+h6{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/* menu text
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+
+menu text small
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 24px;
+*/
+
+/* fine print
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 12px; 
+*/
+
+#aboutUs{
+    background-color: #E2A800;
+    width: 1146px;
+    height: 99px;
+    left: -9.96px;
+    top: 731.84px;
+    color: #474747;
+}
+
+.ourWork{
+    width: 258.33px;
+    height: 226.48px;
+    left: 38.93px;
+    top: -752.75px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #E2A800;
+    border-radius: 10px;
+}
+
+.workText{
+    padding: 10px;
+    font-family: 'Overpass', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: .5px;
+    color: #E2A800;
+    margin-top: 20px;
+}
