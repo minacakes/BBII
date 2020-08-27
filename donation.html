@@ -12,11 +12,14 @@
 
     <!--Donation Form-->
 
+<form action="/action_page.php" target="_blank"> 
+<!--Do form elements need to be contained within a body paragraph?-->
     <h1>MAKE A DONATION TO AAYHF</h1>
 
     <div class="donationForm">
         <div class="chooseAnAmount">
         <p class="formLabel">Choose an amount:</p>
+        <!--<h6 class="formLabel">(Required)</h6>^^^-->
             <div class="setAmounts">
             <p class="formButtons">$10</p>
             <p class="formButtons">$20</p>
@@ -50,23 +53,42 @@
 
     <div class="billingInformation">
         <h5 class="formHeader">Billing Information</h5>
-        <p class="formLabel">(Required)</p>
+        <h6 class="formLabel">(Required)</h6>
             <div>
-            <p class="formLabel">First Name</p>
-            <p class="formLabel">Last Name</p>
-            <p class="formLabel">Address Line 1</p>
-            <p class="formLabel">Address Line 2</p>
-            <p class="formLabel">City</p>
-            <p class="formLabel">State</p>
-            <p class="formLabel">Zip Code</p>
-            <!--Div?--> <p class="formLabel">Email</p>
-            <p class="formLabel">Confirm Email</p>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                
+                <label for="address1">Address Line 1</label><br>
+                <input type="text"id="address1" name="address1"><br>
+                
+                <label for="address2">Address Line 2</label><br>
+                <input type="text" id="address2" name="address2"><br>
+                
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city"><br>
+                
+                <label for="state">State</label><br>
+                <input type="text" id="state" name="state"><br>
+                
+                <label for="zipCode">Zip Code</label><br>
+                <input type="text" id="zipCode" name="zipCode"><br>
+                
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                
+                <label for="confirmEmail">Confirm Email</label><br>
+                <input type="text" id="confirmEmail" name="confirmEmail"><br>
             </div>
         <div class="makeADonationToAAYHF">
         <p class="formButtonsTextTwo">Make a Donation to AAYHF</p>
         </div>
     </div>
     
+</form>
+
     <!--Donation END-->
 
 
@@ -103,3 +125,51 @@
     
 </body>
 </html>
+
+<!------------------------------------------------------------------------->
+<!--<form>
+    .
+    form elements
+    .
+    </form>-->
+
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname"><br>
+
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname"><br>
+
+<label for="address1">Address Line 1</label><br>
+<input type="text"id="address1" name="address1"><br>
+
+<label for="address2">Address Line 2</label><br>
+<input type="text" id="address2" name="address2"><br>
+
+<label for="city">City</label><br>
+<input type="text" id="city" name="city"><br>
+
+<label for="state">State</label><br>
+<input type="text" id="state" name="state"><br>
+
+<label for="zipCode">Zip Code</label><br>
+<input type="text" id="zipCode" name="zipCode"><br>
+
+<label for="email">Email</label><br>
+<input type="text" id="email" name="email"><br>
+
+<label for="confirmEmail">Confirm Email</label><br>
+<input type="text" id="confirmEmail" name="confirmEmail"><br>
+
+<!--Submit Button-->
+<!--???--><label for="submit">Make a Donation to AAYHF</label>
+<input type="submit" id="submit" value="Submit"><!--???-->
+
+<!--SUBMIT CONJECTURE-->
+<!--<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <label for="submit">Make a Donation to AAYHF</label>
+    <input type="submit" id="submit" value="Submit">
+  </form>-->
