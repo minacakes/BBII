@@ -84,9 +84,9 @@ line-height: 12px;
 */
 
 /*ABOUT US*/
-#aboutUs{
+.section{
     background-color: #E2A800;
-    width: 1146px;
+    width: 100%;
     height: 99px;
     left: -9.96px;
     top: 731.84px;
@@ -94,7 +94,8 @@ line-height: 12px;
 }
 
 .aboutHeader{
-    display: block;
+    left: 20px;
+    
 }
 
 .ourWork{
@@ -102,7 +103,7 @@ line-height: 12px;
     width: 258.33px;
     height: 226.48px;
     left: 38.93px;
-    top: -752.75px;
+    top: -600px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
     border-radius: 10px;
@@ -130,6 +131,12 @@ line-height: 12px;
 }
 
 #statistics{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 60%;
+    align-items: start;
+    justify-content: space-between;
+    grid-column-gap: 20px;
     background-color: #474747;
     color: #E2A800;
     font-family: 'Overpass', sans-serif;
@@ -137,4 +144,14 @@ line-height: 12px;
     font-weight: 200;
     font-size: 24px;
     line-height: 24px;
+    padding: 20px;
+    text-align: center;
 }
+
+.stat2{
+    color: #DBDBDB;
+}
+.stat3{
+    color: #E2A800;
+}
+
