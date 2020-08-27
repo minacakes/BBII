@@ -144,8 +144,6 @@ line-height: 12px;
     font-weight: 200;
     font-size: 24px;
     line-height: 24px;
-<<<<<<< HEAD
-=======
     padding: 20px;
     text-align: center;
 }
@@ -157,4 +155,23 @@ line-height: 12px;
     color: #E2A800;
 }
 
->>>>>>> a55c6126f8561fd3a4e15161c5969d4e756262bd
+.sectiondivider{
+    display: block;
+    background-color: #E2A800;
+    width: auto;
+    height: 46px;
+}
+
+.smalldivider{
+    display: block;
+    background-color: #E2A800;
+    width: auto;
+    height: 22px;
+
+}
+
+.footertext{
+    display:grid;
+    grid-template-columns: 20px 10px 10px;
+    
+}
