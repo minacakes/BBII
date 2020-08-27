@@ -83,20 +83,27 @@ font-size: 9px;
 line-height: 12px; 
 */
 
-#aboutUs{
+/*ABOUT US*/
+.section{
     background-color: #E2A800;
-    width: 1146px;
+    width: 100%;
     height: 99px;
     left: -9.96px;
     top: 731.84px;
     color: #474747;
 }
 
+.aboutHeader{
+    left: 20px;
+    
+}
+
 .ourWork{
+    position: relative;
     width: 258.33px;
     height: 226.48px;
     left: 38.93px;
-    top: -752.75px;
+    top: -600px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
     border-radius: 10px;
@@ -112,3 +119,39 @@ line-height: 12px;
     color: #E2A800;
     margin-top: 20px;
 }
+
+.greyBox{
+    background-color: #DBDBDB;
+    display: flex;
+}
+
+.since, .vulnerable{
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#statistics{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 60%;
+    align-items: start;
+    justify-content: space-between;
+    grid-column-gap: 20px;
+    background-color: #474747;
+    color: #E2A800;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat2{
+    color: #DBDBDB;
+}
+.stat3{
+    color: #E2A800;
+}
+
