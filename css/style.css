@@ -170,8 +170,26 @@ line-height: 12px;
 
 }
 
-.footertext{
-    display:grid;
-    grid-template-columns: 20px 10px 10px;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertext {
+    display: inline-block;
+    padding: 20px;
     
+}
+
+.horizontalline {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #E2A800;
+    padding: 0;
+}
+
+.bottomtext {
+    text-align: center;
 }
