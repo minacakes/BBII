@@ -42,13 +42,18 @@
     <div class="paymentInformation">
         <h5 class="formHeader">Payment Information</h5>
         <p class="formLabel">(Required)</p>
+        <!--<h6 class="formLabel">(Required)</h6>^^^-->
             <div class="payPal">
             <p class="formButtonsText">Paypal</p>
             </div>
-        <!--DIV HERE?-->
-        <p class="formLabel">Credit Card Number</p> <!--Specify Divs for form indicators in different positions?-->
-        <p class="formLabel">Expiration Date</p>
-        <p class="formLabel">CVV Number</p>
+            <label for="ccNumber">Credit Card Number</label><br>
+            <input type="text" id="ccNumber" name="ccNumber"><br>
+            
+            <label for="expDate">Expiration Date</label><br>
+            <input type="text" id="expDate" name="expDate"><br>
+            
+            <label for="cvvNumber">CVV Number</label><br>
+            <input type="text"id="cvvNumber" name="cvvNumber"><br>
     </div>
 
     <div class="billingInformation">
@@ -132,7 +137,7 @@
     form elements
     .
     </form>-->
-
+<!--
 <label for="fname">First name:</label><br>
 <input type="text" id="fname" name="fname"><br>
 
@@ -161,8 +166,8 @@
 <input type="text" id="confirmEmail" name="confirmEmail"><br>
 
 <!--Submit Button-->
-<!--???--><label for="submit">Make a Donation to AAYHF</label>
-<input type="submit" id="submit" value="Submit"><!--???-->
+<!--???--><!--<label for="submit">Make a Donation to AAYHF</label>
+<input type="submit" id="submit" value="Submit">--><!--???-->
 
 <!--SUBMIT CONJECTURE-->
 <!--<form action="/action_page.php">
@@ -172,4 +177,4 @@
     <input type="text" id="lname" name="lname" value="Doe"><br><br>
     <label for="submit">Make a Donation to AAYHF</label>
     <input type="submit" id="submit" value="Submit">
-  </form>-->
+  </form>
