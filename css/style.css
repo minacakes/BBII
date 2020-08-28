@@ -1,3 +1,7 @@
+body{
+    background-color: #474747;
+}
+
 /* Color Palette 
 AAYHF Yellow background: #E2A800;
 AAYHF Dark Grey  background: #474747;
@@ -85,16 +89,18 @@ line-height: 12px;
 
 /*ABOUT US*/
 .section{
+    display: grid;
+    align-items: center;
     background-color: #E2A800;
     width: 100%;
-    height: 99px;
+    height: 46px;
     left: -9.96px;
     top: 731.84px;
     color: #474747;
 }
 
 .aboutHeader{
-    left: 20px;
+    margin-left: 20px;
     
 }
 
@@ -153,6 +159,64 @@ line-height: 12px;
 }
 .stat3{
     color: #E2A800;
+}
+
+/* contact */
+
+.section h3{
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.newsletter{
+    color: #E2A800;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter h3{
+    margin: 35px;
+    margin-left: 30px;
+}
+
+.submit{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 30px auto;
+    width: 135px;
+    height: 50px;
+    border: 1px solid #E2A800;
+    border-radius: 25px;
+    color: #E2A800;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.contactInfo{
+    margin-top: 400px;
+    margin-left: 62px;
+    display: flex;
+    height: 100px;
+    color: #E2A800;
+    flex-direction: column;
+}
+
+.map{
+    display: grid;
+    color: #E2A800;
+    justify-content: flex-end;
+}
+
+.form{
+    display: grid;
+    margin-left: 20px;
+    color: white;
 }
 
 .sectiondivider{
