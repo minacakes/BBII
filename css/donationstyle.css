@@ -6,3 +6,42 @@ width: 1138px;
 height: 2606px;
 
 background: #474747;
+
+
+
+/*footer*/
+
+.sectiondivider{
+    display: block;
+    background-color: #E2A800;
+    width: 80px;
+    height: 46px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertext {
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+.horizontalline {
+    display: block;
+    height: 1px;
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #E2A800;
+    padding: 0;
+    margin: auto;
+    
+
+}
+
+.bottomtext {
+    text-align: center;
+}
