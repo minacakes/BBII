@@ -13,17 +13,19 @@
         }
     </style>
 
-<form class="donationForm" action="/action_page.php" target="_blank"> 
-
-<div class="Make_a_Donation"></div>
 <h1>MAKE A DONATION TO AAYHF</h1>
 
-    <div class="formStart">
+<form class="donationForm" action="/action_page.php" target="_blank"> 
+
+<div class="donationForm"></div>
+
+    <div class="chooseAnAmount">
         <div class="chooseAnAmount">
         <p class="formLabel">Choose an amount:</p>
+    <form>
         <!--<h6 class="formLabel">(Required)</h6>^^^-->
-            <div class="setAmounts">
-
+            <div class="setAmounts chooseAnAmount"><!--ADD chooseAnAmount?!-->-->
+                    <div class="tenButton setAmounts chooseAnAmount">
                     <style>
                         .tenButton {
                             position: absolute;
@@ -48,15 +50,46 @@
                             letter-spacing: -0.05em;
                             color: #FFFFFF;
                         }
-                        </style>
-                        <element class="tenButton">
-                        <label for="tenButton">$10</label>
+                    </style>
+                    <element class="tenButton"></element><!--???-->
+                    <label for="tenButton">$10</label>
+                    </div><!--$10End-->
+                    <div class="twentyButton setAmounts chooseAnAmount">
                     <style>
-                            .twentyButton {
+                        .twentyButton {
+                            position: absolute;
+                            width: 71px;
+                            height: 33px;
+                            left: 484px;
+                            top: 812px;
+                            border: 2px solid #E2A800;
+                            box-sizing: border-box;
+                            border-radius: 25px;
+                            position: absolute;
+                            width: 60px;
+                            height: 23px;
+                            left: 488px;
+                            top: 817px;
+                            font-family: Overpass;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            line-height: 24px;
+                            text-align: center;
+                            letter-spacing: -0.05em;
+                            color: #FFFFFF;
+                        }
+                    </style>
+                    <element class="twentyButton"></element><!--???-->
+                    <label for="twentyButton">$20</label>
+                    </div><!--$20End-->
+                    <div class="fiftyButton setAmounts chooseAnAmount">
+                        <style>
+                            .fiftyButton {
                                 position: absolute;
                                 width: 71px;
                                 height: 33px;
-                                left: 407px;
+                                left: 561px;
                                 top: 812px;
                                 border: 2px solid #E2A800;
                                 box-sizing: border-box;
@@ -64,7 +97,7 @@
                                 position: absolute;
                                 width: 60px;
                                 height: 23px;
-                                left: 412px;
+                                left: 567px;
                                 top: 817px;
                                 font-family: Overpass;
                                 font-style: normal;
@@ -75,26 +108,157 @@
                                 letter-spacing: -0.05em;
                                 color: #FFFFFF;
                             }
+                        </style>
+                        <element class="fiftyButton"></element><!--???-->
+                        <label for="fiftyButton">$50</label>
+                        </div><!--$50End-->
+                        <div class="hundredButton setAmounts chooseAnAmount">
+                            <style>
+                                .hundredButton {
+                                    position: absolute;
+                                    width: 71px;
+                                    height: 33px;
+                                    left: 638px;
+                                    top: 812px;
+                                    border: 2px solid #E2A800;
+                                    box-sizing: border-box;
+                                    border-radius: 25px;
+                                    position: absolute;
+                                    width: 60px;
+                                    height: 23px;
+                                    left: 642px;
+                                    top: 817px;
+                                    font-family: Overpass;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                    letter-spacing: -0.05em;
+                                    color: #FFFFFF;
+                                }
                             </style>
-                            <element class="twentyButton">
-                            <label for="twentyButton">$10</label>
-            <p class="formButtons">$20</p>
-            <p class="formButtons">$50</p>
-            <p class="formButtons">$100</p>
-            <p class="formLabel">Other:</p> <!--Might Need Div-->
-            </div>
+                            <element class="hundredButton"></element><!--???-->
+                            <label for="hundredButton">$100</label>
+                        </div><!--$100End-->
+                        <div class="chooseAnAmount" id="other">
+                            <label for="other">Other:</label>
+                            <input type="text" id="other" name="other">
+                            <style>
+                                #other {
+                                    /*position: absolute;
+                                    width: 54px;
+                                    height: 24px;
+                                    left: 410px;
+                                    top: 866px;*/
+                                    font-family: Open Sans;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                    letter-spacing: -0.05em;
+                                }
+                            </style>
+                        </div><!--other End-->
+            </div><!--setAmounts END-->
         </div>
-    </div>
+    </form>
+    </div><!--chooseAnAmount END-->
 
     <div class="chooseAFrequency">
-        <p class="formLabel">Other:</p>
-            <div>
-            <p class="formLabel">Choose a frequency:</p>
-            <p class="formButtonsText">One-Time</p>
-            <p class="formButtonsText">Monthly</p>
-            <p class="formButtonsText">Annually</p>
+        <p class="chooseAFrequency formLabel">Choose a Frequency</p>
+    <form>
+            <div class="oneTime chooseAFrequency">
+                <style>
+                    .oneTime {
+                        position: absolute;
+                        width: 97px;
+                        height: 33px;
+                        left: 332px;
+                        top: 1037px;
+                        border: 2px solid #E2A800;
+                        box-sizing: border-box;
+                        border-radius: 25px;
+                        position: absolute;
+                        width: 86px;
+                        height: 23px;
+                        left: 337px;
+                        top: 1042px;
+                        font-family: Overpass;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center; /*or 133%*/
+                        letter-spacing: -0.05em;
+                        color: #FFFFFF;
+                    }
+                </style>
+                <element class="oneTime"></element><!--???-->
+                <label for="oneTime">One-Time</label>
             </div>
-    </div>
+            <div class="monthly chooseAFrequency">
+                <style>
+                    .monthly {
+                        position: absolute;
+                        width: 95px;
+                        height: 33px;
+                        left: 526px;
+                        top: 1037px;
+                        border: 2px solid #E2A800;
+                        box-sizing: border-box;
+                        border-radius: 25px;
+                        position: absolute;
+                        width: 86px;
+                        height: 23px;
+                        left: 530px;
+                        top: 1042px;
+                        font-family: Overpass;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center; /*or 133%*/
+                        letter-spacing: -0.05em;
+                        color: #FFFFFF;
+                    }
+                </style>
+                <element class="monthly"></element><!--???-->
+                <label for="monthly">Monthly</label>
+            </div>
+            <div class="annually chooseAFrequency">
+                <style>
+                    .annually {
+                        position: absolute;
+                        width: 93px;
+                        height: 33px;
+                        left: 728px;
+                        top: 1037px;
+                        border: 2px solid #E2A800;
+                        box-sizing: border-box;
+                        border-radius: 25px;
+                        position: absolute;
+                        width: 86px;
+                        height: 23px;
+                        left: 730px;
+                        top: 1042px;
+                        font-family: Overpass;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center; /*or 133%*/
+                        letter-spacing: -0.05em;
+                        color: #FFFFFF;
+                    }
+                </style>
+                <element class="annually"></element><!--???-->
+                <label for="annually">Annually</label>
+            </div>
+    </form>
+    </div><!--chooseAFrequency END-->
+
 
     <div class="paymentInformation">
         <h5 class="formHeader">Payment Information</h5>
@@ -157,7 +321,7 @@
                 </div>
             </form>
             
-        <style>
+            <style>
                 .button {
                     border: 2px solid #E2A800;
                     box-sizing: border-box;
@@ -182,9 +346,9 @@
                     margin: 4px 2px;
                     cursor: pointer;
                 }
-        </style>
-                <element class="button">
-                <label for="button">Make a Donation to AAYHF</label>
+            </style>
+            <element class="button">
+            <label for="button">Make a Donation to AAYHF</label>
 
             
             <!--<div class="makeADonationToAAYHF">
@@ -194,6 +358,10 @@
     </div>
     
 </form>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
 
 </div><!--Make_a_Donation END-->
 

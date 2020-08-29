@@ -219,7 +219,7 @@ background: #474747;
 
 }
 
-.donationForm form {/* Rectangle 251 */
+.donationForm {/* Rectangle 251 */
 
 
     position: absolute;
@@ -274,6 +274,23 @@ background: #474747;
     color: #E2A800;
 }
 
+.formButtons{
+    
+}
+
+.formStart{
+    position: absolute;
+    width: 668px;
+    height: 194px;
+    left: 234px;
+    top: 742px;
+
+/* AAYHF - Yellow #E2A800 */
+
+    border: 1px solid #E2A800;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
 /*.signUp form {
     margin: 35px auto;
     background-color: #f2f2f2;
