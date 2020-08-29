@@ -169,9 +169,21 @@ line-height: 12px;
 
 .sectiondivider{
     display: block;
-    background-color: #E2A800;
-    width: auto;
+    background-color: #00e2b1;
+    width: 100%;
     height: 46px;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+/* or 100% */
+    letter-spacing: -0.05em;
+}
+
+
+.plus_minus {
+    padding-left: 20px;
 }
 
 
@@ -182,7 +194,8 @@ line-height: 12px;
     align-items: center;
 }
 
-.smalldivider1{
+
+.smalldivider{
     display: block;
     background-color: #E2A800;
     width: auto;
@@ -193,12 +206,14 @@ line-height: 12px;
 
 .selectionbox1 {
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 200px;
     padding-left: 15px;
     padding-right: 15px;
     border-style: solid;
     border-color: #E2A800;
+    color: #E2A800;
+    background-color: black;
 }
 
 .pimg2 {
@@ -208,13 +223,6 @@ line-height: 12px;
     position: relative;
 }
 
-.smalldivider2{
-    display: block;
-    background-color: #E2A800;
-    width: auto;
-    height: 24px;
-    position: relative;
-}
 
 .selectionbox2 {
     position: absolute;
@@ -224,6 +232,8 @@ line-height: 12px;
     padding-right: 15px;
     border-style: solid;
     border-color: #E2A800;
+    color: #E2A800;
+    background-color: black;
 }
 
 .pimg3 {
@@ -241,6 +251,8 @@ line-height: 12px;
     padding-right: 15px;
     border-style: solid;
     border-color: #E2A800;
+    color: #E2A800;
+    background-color: black;
 }
 
 
@@ -314,6 +326,14 @@ line-height: 12px;
     display: inline-block;
     padding: 20px;
     
+}
+
+#whatwedo {
+    padding-bottom: 38px;
+}
+
+#getinvolved {
+    padding-bottom: 38px;
 }
 
 .horizontalline {
