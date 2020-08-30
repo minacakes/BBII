@@ -167,9 +167,9 @@ line-height: 12px;
     display: block;
 }
 
-.sectiondivider{
+.sectiondivider {
     display: block;
-    background-color: #00e2b1;
+    background-color: #E2A800;
     width: 100%;
     height: 46px;
     font-family: 'Overpass', sans-serif;
@@ -336,6 +336,13 @@ line-height: 12px;
     padding-bottom: 38px;
 }
 
+.footertext ul {
+    color: #E2A800;
+}
+
+.footertext h3 {
+    color: white;
+}
 .horizontalline {
     display: block;
     height: 1px;
@@ -350,4 +357,5 @@ line-height: 12px;
 
 .bottomtext {
     text-align: center;
+    color: #E2A800;
 }
