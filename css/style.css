@@ -88,6 +88,18 @@ line-height: 12px;
 */
 <<<<<<< Updated upstream
 
+/*TOP NAV*/
+.header{
+    
+}
+.topnav{
+    background-color: black;
+    fill-opacity: ;
+    position: fixed;
+    width: max-content;
+    height: 150px;
+}
+
 /*ABOUT US*/
 
 
