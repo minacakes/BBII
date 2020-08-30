@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAYHF redesign</title>
-    <link rel="stylesheet" type="text/css" href="/css/donationstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/donationstyle.css">
 </head>
 <body>
     
@@ -12,11 +12,14 @@
 
     <!--Donation Form-->
 
+<form action="/action_page.php" target="_blank"> 
+<!--Do form elements need to be contained within a body paragraph?-->
     <h1>MAKE A DONATION TO AAYHF</h1>
 
     <div class="donationForm">
         <div class="chooseAnAmount">
         <p class="formLabel">Choose an amount:</p>
+        <!--<h6 class="formLabel">(Required)</h6>^^^-->
             <div class="setAmounts">
             <p class="formButtons">$10</p>
             <p class="formButtons">$20</p>
@@ -39,67 +42,142 @@
     <div class="paymentInformation">
         <h5 class="formHeader">Payment Information</h5>
         <p class="formLabel">(Required)</p>
+        <!--<h6 class="formLabel">(Required)</h6>^^^-->
             <div class="payPal">
             <p class="formButtonsText">Paypal</p>
             </div>
-        <!--DIV HERE?-->
-        <p class="formLabel">Credit Card Number</p> <!--Specify Divs for form indicators in different positions?-->
-        <p class="formLabel">Expiration Date</p>
-        <p class="formLabel">CVV Number</p>
+            <label for="ccNumber">Credit Card Number</label><br>
+            <input type="text" id="ccNumber" name="ccNumber"><br>
+            
+            <label for="expDate">Expiration Date</label><br>
+            <input type="text" id="expDate" name="expDate"><br>
+            
+            <label for="cvvNumber">CVV Number</label><br>
+            <input type="text"id="cvvNumber" name="cvvNumber"><br>
     </div>
 
     <div class="billingInformation">
         <h5 class="formHeader">Billing Information</h5>
-        <p class="formLabel">(Required)</p>
+        <h6 class="formLabel">(Required)</h6>
             <div>
-            <p class="formLabel">First Name</p>
-            <p class="formLabel">Last Name</p>
-            <p class="formLabel">Address Line 1</p>
-            <p class="formLabel">Address Line 2</p>
-            <p class="formLabel">City</p>
-            <p class="formLabel">State</p>
-            <p class="formLabel">Zip Code</p>
-            <!--Div?--> <p class="formLabel">Email</p>
-            <p class="formLabel">Confirm Email</p>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                
+                <label for="address1">Address Line 1</label><br>
+                <input type="text"id="address1" name="address1"><br>
+                
+                <label for="address2">Address Line 2</label><br>
+                <input type="text" id="address2" name="address2"><br>
+                
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city"><br>
+                
+                <label for="state">State</label><br>
+                <input type="text" id="state" name="state"><br>
+                
+                <label for="zipCode">Zip Code</label><br>
+                <input type="text" id="zipCode" name="zipCode"><br>
+                
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                
+                <label for="confirmEmail">Confirm Email</label><br>
+                <input type="text" id="confirmEmail" name="confirmEmail"><br>
             </div>
         <div class="makeADonationToAAYHF">
         <p class="formButtonsTextTwo">Make a Donation to AAYHF</p>
         </div>
     </div>
     
+</form>
+
     <!--Donation END-->
 
 
     <!--Global Footer-->
-
-    <div class="footer">
-        <div>
-        <h3>Who We Are</h3>
-        <ul style="list-style-type: none">
+    <section id="footersec">
+        <div class="sectiondivider"></div>
+        <div class="footer">
+            <div id="whoweare" class="footertext">
+                <h3>Who We Are</h3>
+             <ul style="list-style-type: none">
             <li>About Us</li>
             <li>Contact Us</li>
             <li>Reports</li>
-        </ul>
-    </div>
-    <div>
-        <h3>What We Do</h3>
-        <ul style="list-style-type: none">
+             </ul>
+            </div>
+            <div id="whatwedo" class="footertext">
+                <h3>What We Do</h3>
+            <ul style="list-style-type: none">
             <li>Programs</li>
             <li>The Latest</li>
-        </ul>
-    </div>
-    <div>
-        <h3>Get Involved</h3>
-        <ul style="list-style-type: none">
+            </ul>
+            </div>
+          <div id="getinvolved" class="footertext">
+            <h3>Get Involved</h3>
+            <ul style="list-style-type: none">
             <li>Donate</li>
             <li>Become A Sponsor</li>
-        </ul>
+            </ul>
+        </div>
     </div>
-    <div class="horizontal line"></div>
-    <div>
+    <div class="horizontalline"></div>
+    <div class="bottomtext">
         <p>AAYHF is a 501(c)(3)  |  Privacy Policy  |  Copyright 2020  |  Login</p>
     </div>
-    </div>
+    </section>
     
 </body>
 </html>
+
+
+<!------------------------------------------------------------------------->
+<!--<form>
+    .
+    form elements
+    .
+    </form>-->
+<!--
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname"><br>
+
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname"><br>
+
+<label for="address1">Address Line 1</label><br>
+<input type="text"id="address1" name="address1"><br>
+
+<label for="address2">Address Line 2</label><br>
+<input type="text" id="address2" name="address2"><br>
+
+<label for="city">City</label><br>
+<input type="text" id="city" name="city"><br>
+
+<label for="state">State</label><br>
+<input type="text" id="state" name="state"><br>
+
+<label for="zipCode">Zip Code</label><br>
+<input type="text" id="zipCode" name="zipCode"><br>
+
+<label for="email">Email</label><br>
+<input type="text" id="email" name="email"><br>
+
+<label for="confirmEmail">Confirm Email</label><br>
+<input type="text" id="confirmEmail" name="confirmEmail"><br>
+
+<!--Submit Button-->
+<!--???--><!--<label for="submit">Make a Donation to AAYHF</label>
+<input type="submit" id="submit" value="Submit">--><!--???-->
+
+<!--SUBMIT CONJECTURE-->
+<!--<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <label for="submit">Make a Donation to AAYHF</label>
+    <input type="submit" id="submit" value="Submit">
+  </form>

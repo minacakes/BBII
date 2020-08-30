@@ -1,3 +1,7 @@
+body{
+    background-color: #474747;
+}
+
 /* Color Palette 
 AAYHF Yellow background: #E2A800;
 AAYHF Dark Grey  background: #474747;
@@ -84,17 +88,20 @@ line-height: 12px;
 */
 
 /*ABOUT US*/
-#aboutUs{
+.section{
+    display: grid;
+    align-items: center;
     background-color: #E2A800;
-    width: 1146px;
-    height: 99px;
+    width: 100%;
+    height: auto;
     left: -9.96px;
     top: 731.84px;
     color: #474747;
 }
 
 .aboutHeader{
-    display: block;
+    margin-left: 20px;
+    
 }
 
 .ourWork{
@@ -102,7 +109,7 @@ line-height: 12px;
     width: 258.33px;
     height: 226.48px;
     left: 38.93px;
-    top: -752.75px;
+    top: -600px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
     border-radius: 10px;
@@ -130,6 +137,12 @@ line-height: 12px;
 }
 
 #statistics{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 60%;
+    align-items: start;
+    justify-content: space-between;
+    grid-column-gap: 20px;
     background-color: #474747;
     color: #E2A800;
     font-family: 'Overpass', sans-serif;
@@ -137,4 +150,205 @@ line-height: 12px;
     font-weight: 200;
     font-size: 24px;
     line-height: 24px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat2{
+    color: #DBDBDB;
+}
+.stat3{
+    color: #E2A800;
+}
+/* Programs */
+
+
+#Programssec{
+    display: block;
+}
+
+
+.sectiondivider{
+    display: block;
+    background-color: #00e2b1;
+    width: 100%;
+    height: 46px;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+/* or 100% */
+    letter-spacing: -0.05em;
+}
+
+
+.plus_minus {
+    padding-left: 20px;
+}
+
+
+.pimg1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.smalldivider{
+    display: block;
+    background-color: #E2A800;
+    width: auto;
+    height: 24px;
+    position: relative;
+}
+
+
+.selectionbox1 {
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: solid;
+    border-color: #E2A800;
+    color: #E2A800;
+    background-color: black;
+}
+
+.pimg2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.selectionbox2 {
+    position: absolute;
+    right: 300px;
+    top: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: solid;
+    border-color: #E2A800;
+    color: #E2A800;
+    background-color: black;
+}
+
+.pimg3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.selectionbox3 {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: solid;
+    border-color: #E2A800;
+    color: #E2A800;
+    background-color: black;
+}
+
+
+/* contact */
+
+.section h3{
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.newsletter{
+    color: #E2A800;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter h3{
+    margin: 35px;
+    margin-left: 30px;
+}
+
+.submit{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 30px auto;
+    width: 135px;
+    height: 50px;
+    border: 1px solid #E2A800;
+    border-radius: 25px;
+    color: #E2A800;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.contactInfo{
+    margin-top: 400px;
+    margin-left: 62px;
+    display: flex;
+    height: 100px;
+    color: #E2A800;
+    flex-direction: column;
+}
+
+.map{
+    display: grid;
+    color: #E2A800;
+    justify-content: flex-end;
+}
+
+.form{
+    display: grid;
+    margin-left: 20px;
+    color: white;
+}
+
+
+/*footer*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertext {
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+#whatwedo {
+    padding-bottom: 38px;
+}
+
+#getinvolved {
+    padding-bottom: 38px;
+}
+
+.horizontalline {
+    display: block;
+    height: 1px;
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #E2A800;
+    padding: 0;
+    margin: auto;
+    
+
+}
+
+.bottomtext {
+    text-align: center;
 }
