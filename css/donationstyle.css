@@ -1,9 +1,333 @@
 /* Desktop Donation Final 1 */
 
-
+/*
 position: relative;
 width: 1138px;
-height: 2606px;
+height: 2606px;*/ /*
+
+background: #474747;
+
+/** Typography **/
+h1{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+
+/* or 100% */
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h3{
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+/* or 100% */
+    letter-spacing: -0.05em;
+}
+
+h4{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* large body text */
+h5{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+/* body text */
+h6{
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/* menu text
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+
+menu text small
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 24px;
+*/
+
+/* fine print
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 9px;
+line-height: 12px; 
+*/
+
+/*ABOUT US*/
+.section{
+    background-color: #E2A800;
+    width: 100%;
+    height: 99px;
+    left: -9.96px;
+    top: 731.84px;
+    color: #474747;
+}
+
+.aboutHeader{
+    left: 20px;
+    
+}
+
+.ourWork{
+    position: relative;
+    width: 258.33px;
+    height: 226.48px;
+    left: 38.93px;
+    top: -600px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #E2A800;
+    border-radius: 10px;
+}
+
+.workText{
+    padding: 10px;
+    font-family: 'Overpass', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: .5px;
+    color: #E2A800;
+    margin-top: 20px;
+}
+
+.greyBox{
+    background-color: #DBDBDB;
+    display: flex;
+}
+
+.since, .vulnerable{
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#statistics{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 60%;
+    align-items: start;
+    justify-content: space-between;
+    grid-column-gap: 20px;
+    background-color: #474747;
+    color: #E2A800;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat2{
+    color: #DBDBDB;
+}
+.stat3{
+    color: #E2A800;
+}
+
+.sectiondivider{
+    display: block;
+    background-color: #E2A800;
+    width: auto;
+    height: 46px;
+}
+
+.smalldivider{
+    display: block;
+    background-color: #E2A800;
+    width: auto;
+    height: 22px;
+
+}
+
+.footertext{
+    display:grid;
+    grid-template-columns: 20px 10px 10px;
+    
+background: #474747;
+
+
+
+/*footer*/
+
+.sectiondivider {
+    display: block;
+    background-color: #E2A800;
+    width: 80px;
+    height: 46px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertext {
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+.horizontalline {
+    display: block;
+    height: 1px;
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #E2A800;
+    padding: 0;
+    margin: auto;
+    
+
+}
+
+.bottomtext {
+    text-align: center;
+
+}
+
+.donationForm {/* Rectangle 251 */
+
+
+    position: absolute;
+    width: 668px;
+    height: 194px;
+    left: 234px;
+    top: 742px;
+    
+    /* AAYHF - Yellow #E2A800 */
+    
+    border: 1px solid #E2A800;
+    box-sizing: border-box;
+    border-radius: 0px;
+    
+    
+    /* Rectangle 252 */
+    
+    
+    position: absolute;
+    width: 668px;
+    height: 677px;
+    left: 235px;
+    top: 1424px;
+    
+    /* AAYHF - Yellow #E2A800 */
+    
+    border: 1px solid #E2A800;
+    box-sizing: border-box;
+    border-radius: 0px;}
+
+.h1Donation {
+    position: absolute;
+    width: 325px;
+    height: 72px;
+    left: 407px;
+    top: 188px;
+    
+    /* H1 Overpass reg 36pt */
+    
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    /* or 100% */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    /* AAYHF - Yellow #E2A800 */
+    
+    color: #E2A800;
+}
+
+.formButtons{
+    
+}
+
+.formStart{
+    position: absolute;
+    width: 668px;
+    height: 194px;
+    left: 234px;
+    top: 742px;
+
+/* AAYHF - Yellow #E2A800 */
+
+    border: 1px solid #E2A800;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+/*.signUp form {
+    margin: 35px auto;
+    background-color: #f2f2f2;
+    padding: 25px;
+    border-radius: 7px;
+  }*/
+
+
+/* Billing Information */
+
+.billingInformation {
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+/*position: absolute;
+width: 668px;
+height: 677px;
+left: 235px;
+top: 1424px;
+
+AAYHF - Yellow #E2A800 
+
+border: 1px solid #E2A800;
+box-sizing: border-box;
+border-radius: 0px;*/
+}
+
+.button {
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
 
 background: #474747;
 

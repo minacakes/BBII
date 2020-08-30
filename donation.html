@@ -7,37 +7,258 @@
     <link rel="stylesheet" type="text/css" href="css/donationstyle.css">
 </head>
 <body>
-    
-    <!--Global Nav-->
+    <style>
+        body {
+            background-color: #474747;
+        }
+    </style>
 
-    <!--Donation Form-->
+<h1>MAKE A DONATION TO AAYHF</h1>
 
-<form action="/action_page.php" target="_blank"> 
-<!--Do form elements need to be contained within a body paragraph?-->
-    <h1>MAKE A DONATION TO AAYHF</h1>
+<form class="donationForm" action="/action_page.php" target="_blank"> 
 
-    <div class="donationForm">
+<div class="donationForm"></div>
+
+    <div class="chooseAnAmount">
         <div class="chooseAnAmount">
         <p class="formLabel">Choose an amount:</p>
+    <form>
         <!--<h6 class="formLabel">(Required)</h6>^^^-->
-            <div class="setAmounts">
-            <p class="formButtons">$10</p>
-            <p class="formButtons">$20</p>
-            <p class="formButtons">$50</p>
-            <p class="formButtons">$100</p>
-            <p class="formLabel">Other:</p> <!--Might Need Div-->
+            <div class="setAmounts chooseAnAmount"><!--ADD chooseAnAmount?!-->-->
+                    <div class="tenButton setAmounts chooseAnAmount">
+                    <style>
+                        .tenButton {
+                            position: absolute;
+                            width: 71px;
+                            height: 33px;
+                            left: 407px;
+                            top: 812px;
+                            border: 2px solid #E2A800;
+                            box-sizing: border-box;
+                            border-radius: 25px;
+                            position: absolute;
+                            width: 60px;
+                            height: 23px;
+                            left: 412px;
+                            top: 817px;
+                            font-family: Overpass;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            line-height: 24px;
+                            text-align: center;
+                            letter-spacing: -0.05em;
+                            color: #FFFFFF;
+                        }
+                    </style>
+                    <element class="tenButton"></element><!--???-->
+                    <label for="tenButton">$10</label>
+                    </div><!--$10End-->
+                    <div class="twentyButton setAmounts chooseAnAmount">
+                    <style>
+                        .twentyButton {
+                            position: absolute;
+                            width: 71px;
+                            height: 33px;
+                            left: 484px;
+                            top: 812px;
+                            border: 2px solid #E2A800;
+                            box-sizing: border-box;
+                            border-radius: 25px;
+                            position: absolute;
+                            width: 60px;
+                            height: 23px;
+                            left: 488px;
+                            top: 817px;
+                            font-family: Overpass;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            line-height: 24px;
+                            text-align: center;
+                            letter-spacing: -0.05em;
+                            color: #FFFFFF;
+                        }
+                    </style>
+                    <element class="twentyButton"></element><!--???-->
+                    <label for="twentyButton">$20</label>
+                    </div><!--$20End-->
+                    <div class="fiftyButton setAmounts chooseAnAmount">
+                        <style>
+                            .fiftyButton {
+                                position: absolute;
+                                width: 71px;
+                                height: 33px;
+                                left: 561px;
+                                top: 812px;
+                                border: 2px solid #E2A800;
+                                box-sizing: border-box;
+                                border-radius: 25px;
+                                position: absolute;
+                                width: 60px;
+                                height: 23px;
+                                left: 567px;
+                                top: 817px;
+                                font-family: Overpass;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 20px;
+                                line-height: 24px;
+                                text-align: center;
+                                letter-spacing: -0.05em;
+                                color: #FFFFFF;
+                            }
+                        </style>
+                        <element class="fiftyButton"></element><!--???-->
+                        <label for="fiftyButton">$50</label>
+                        </div><!--$50End-->
+                        <div class="hundredButton setAmounts chooseAnAmount">
+                            <style>
+                                .hundredButton {
+                                    position: absolute;
+                                    width: 71px;
+                                    height: 33px;
+                                    left: 638px;
+                                    top: 812px;
+                                    border: 2px solid #E2A800;
+                                    box-sizing: border-box;
+                                    border-radius: 25px;
+                                    position: absolute;
+                                    width: 60px;
+                                    height: 23px;
+                                    left: 642px;
+                                    top: 817px;
+                                    font-family: Overpass;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                    letter-spacing: -0.05em;
+                                    color: #FFFFFF;
+                                }
+                            </style>
+                            <element class="hundredButton"></element><!--???-->
+                            <label for="hundredButton">$100</label>
+                        </div><!--$100End-->
+                        <div class="chooseAnAmount" id="other">
+                            <label for="other">Other:</label>
+                            <input type="text" id="other" name="other">
+                            <style>
+                                #other {
+                                    /*position: absolute;
+                                    width: 54px;
+                                    height: 24px;
+                                    left: 410px;
+                                    top: 866px;*/
+                                    font-family: Open Sans;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                    letter-spacing: -0.05em;
+                                }
+                            </style>
+                        </div><!--other End-->
+            </div><!--setAmounts END-->
         </div>
-    </div>
+    </form>
+    </div><!--chooseAnAmount END-->
 
     <div class="chooseAFrequency">
-        <p class="formLabel">Other:</p>
-            <div>
-            <p class="formLabel">Choose a frequency:</p>
-            <p class="formButtonsText">One-Time</p>
-            <p class="formButtonsText">Monthly</p>
-            <p class="formButtonsText">Annually</p>
+        <p class="chooseAFrequency formLabel">Choose a Frequency</p>
+    <form>
+            <div class="oneTime chooseAFrequency">
+                <style>
+                    .oneTime {
+                        position: absolute;
+                        width: 97px;
+                        height: 33px;
+                        left: 332px;
+                        top: 1037px;
+                        border: 2px solid #E2A800;
+                        box-sizing: border-box;
+                        border-radius: 25px;
+                        position: absolute;
+                        width: 86px;
+                        height: 23px;
+                        left: 337px;
+                        top: 1042px;
+                        font-family: Overpass;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center; /*or 133%*/
+                        letter-spacing: -0.05em;
+                        color: #FFFFFF;
+                    }
+                </style>
+                <element class="oneTime"></element><!--???-->
+                <label for="oneTime">One-Time</label>
             </div>
-    </div>
+            <div class="monthly chooseAFrequency">
+                <style>
+                    .monthly {
+                        position: absolute;
+                        width: 95px;
+                        height: 33px;
+                        left: 526px;
+                        top: 1037px;
+                        border: 2px solid #E2A800;
+                        box-sizing: border-box;
+                        border-radius: 25px;
+                        position: absolute;
+                        width: 86px;
+                        height: 23px;
+                        left: 530px;
+                        top: 1042px;
+                        font-family: Overpass;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center; /*or 133%*/
+                        letter-spacing: -0.05em;
+                        color: #FFFFFF;
+                    }
+                </style>
+                <element class="monthly"></element><!--???-->
+                <label for="monthly">Monthly</label>
+            </div>
+            <div class="annually chooseAFrequency">
+                <style>
+                    .annually {
+                        position: absolute;
+                        width: 93px;
+                        height: 33px;
+                        left: 728px;
+                        top: 1037px;
+                        border: 2px solid #E2A800;
+                        box-sizing: border-box;
+                        border-radius: 25px;
+                        position: absolute;
+                        width: 86px;
+                        height: 23px;
+                        left: 730px;
+                        top: 1042px;
+                        font-family: Overpass;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center; /*or 133%*/
+                        letter-spacing: -0.05em;
+                        color: #FFFFFF;
+                    }
+                </style>
+                <element class="annually"></element><!--???-->
+                <label for="annually">Annually</label>
+            </div>
+    </form>
+    </div><!--chooseAFrequency END-->
+
 
     <div class="paymentInformation">
         <h5 class="formHeader">Payment Information</h5>
@@ -57,48 +278,97 @@
     </div>
 
     <div class="billingInformation">
+        <div class="billingInformation">
         <h5 class="formHeader">Billing Information</h5>
         <h6 class="formLabel">(Required)</h6>
-            <div>
+        </div>
+            <form>
+                <div class="billingInformation">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname"><br>
-                
+                </div>
+                <div class="billingInformation">
                 <label for="lname">Last name:</label><br>
                 <input type="text" id="lname" name="lname"><br>
-                
+                </div>
+                <div class="billingInformation">
                 <label for="address1">Address Line 1</label><br>
                 <input type="text"id="address1" name="address1"><br>
-                
+                </div>
+                <div class="billingInformation">
                 <label for="address2">Address Line 2</label><br>
                 <input type="text" id="address2" name="address2"><br>
-                
+                </div>
+                <div class="billingInformation">
                 <label for="city">City</label><br>
                 <input type="text" id="city" name="city"><br>
-                
+                </div>
+                <div class="billingInformation">
                 <label for="state">State</label><br>
                 <input type="text" id="state" name="state"><br>
-                
+                </div>
+                <div class="billingInformation">
                 <label for="zipCode">Zip Code</label><br>
                 <input type="text" id="zipCode" name="zipCode"><br>
-                
+                </div>
+                <div class="billingInformation">
                 <label for="email">Email</label><br>
                 <input type="text" id="email" name="email"><br>
-                
+                </div>
+                <div class="billingInformation">
                 <label for="confirmEmail">Confirm Email</label><br>
                 <input type="text" id="confirmEmail" name="confirmEmail"><br>
-            </div>
-        <div class="makeADonationToAAYHF">
-        <p class="formButtonsTextTwo">Make a Donation to AAYHF</p>
-        </div>
+                </div>
+            </form>
+            
+            <style>
+                .button {
+                    border: 2px solid #E2A800;
+                    box-sizing: border-box;
+                    border-radius: 25px;  
+                    position: absolute;
+                    width: 389px;
+                    height: 50px;
+                    left: 380px;
+                    top: 1988px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 24px;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 24px; /* identical to box height, or 100% */
+                    text-align: center;
+                    letter-spacing: -0.05em;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+            </style>
+            <element class="button">
+            <label for="button">Make a Donation to AAYHF</label>
+
+            
+            <!--<div class="makeADonationToAAYHF">
+        <p class="formButtonsTextTwo">Make a Donation to AAYHF</p>-->
+
+        
     </div>
     
 </form>
 
-    <!--Donation END-->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+</div><!--Make_a_Donation END-->
 
 
     <!--Global Footer-->
     <section id="footersec">
+        <div class="sectiondivider">test</div>
         <div class="sectiondivider"></div>
         <div class="footer">
             <div id="whoweare" class="footertext">
@@ -181,3 +451,68 @@
     <label for="submit">Make a Donation to AAYHF</label>
     <input type="submit" id="submit" value="Submit">
   </form>
+
+
+  <!--Button:!!!!!   <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+  <!--FORM EX. FROM BOOTSTRAP:
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="billingInformation">
+    <h5 class="formHeader">Billing Information</h5>
+    <h6 class="formLabel">(Required)</h6>
+        <form>
+            <div class="billingInformation">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            </div>
+            <div class="billingInformation">
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            </div>
+            <div class="billingInformation">
+            <label for="address1">Address Line 1</label><br>
+            <input type="text"id="address1" name="address1"><br>
+            </div>
+            <div class="billingInformation">
+            <label for="address2">Address Line 2</label><br>
+            <input type="text" id="address2" name="address2"><br>
+            </div>
+            <div class="billingInformation">
+            <label for="city">City</label><br>
+            <input type="text" id="city" name="city"><br>
+            </div>
+            <div class="billingInformation">
+            <label for="state">State</label><br>
+            <input type="text" id="state" name="state"><br>
+            </div>
+            <div class="billingInformation">
+            <label for="zipCode">Zip Code</label><br>
+            <input type="text" id="zipCode" name="zipCode"><br>
+            </div>
+            <div class="billingInformation">
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email"><br>
+            </div>
+            <div class="billingInformation">
+            <label for="confirmEmail">Confirm Email</label><br>
+            <input type="text" id="confirmEmail" name="confirmEmail"><br>
+            </div>
+        </form>
+</div> <!-- billingInformation END-->
+     
