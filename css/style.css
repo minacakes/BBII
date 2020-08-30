@@ -86,6 +86,7 @@ font-weight: normal;
 font-size: 9px;
 line-height: 12px; 
 */
+<<<<<<< Updated upstream
 
 /*ABOUT US*/
 
@@ -94,6 +95,27 @@ line-height: 12px;
     width: 100%;
     background-color: #E2A800;
     height: 46px;
+=======
+.section{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    top: 731.84px;
+}
+/*ABOUT US*/
+
+.aboutHeader{
+    background-color: #E2A800;
+    color: #474747;
+    height: 46px;
+    background-size: 100%;
+    
+>>>>>>> Stashed changes
+}
+
+.aboutHeader h3{
+    margin-left: 20px;
 }
 
 .ourWork{
@@ -151,6 +173,7 @@ line-height: 12px;
 .stat3{
     color: #E2A800;
 }
+<<<<<<< Updated upstream
 
 .ourTeam{
     display: flex;
@@ -165,6 +188,12 @@ line-height: 12px;
     box-shadow: rgba(0, 0, 0, 0.7);
     padding: 30px;
     margin-left: 164px;
+=======
+.ourTeam h1{
+    background-color: #E2A800;
+    height: 46px;
+    padding: 10px;
+>>>>>>> Stashed changes
 }
 /* Programs */
 
@@ -262,6 +291,10 @@ line-height: 12px;
 
 
 /* contact */
+
+.sectionContact{
+    height: 46px;
+}
 
 .section h3{
     margin-left: 20px;
