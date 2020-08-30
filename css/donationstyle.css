@@ -313,12 +313,11 @@ line-height: 24px;
 /* identical to box height, or 100% */
 
 background: #474747;
-
+}
 
 
 /*footer*/
 
-{}
 .sectiondivider {
     display: block;
     background-color:#E2A800;
