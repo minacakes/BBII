@@ -219,6 +219,8 @@ background: #474747;
 
 }
 
+
+
 .donationForm {/* Rectangle 251 */
 
 
@@ -250,6 +252,17 @@ background: #474747;
     box-sizing: border-box;
     border-radius: 0px;}
 
+.chooseAnAmount {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: 194px;
+  }
+
+.chooseAFrequency {
+    display: inline-flex;
+}
+
 .h1Donation {
     position: absolute;
     width: 325px;
@@ -275,7 +288,7 @@ background: #474747;
 }
 
 .formButtons{
-    
+
 }
 
 .formStart{
