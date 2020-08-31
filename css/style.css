@@ -87,12 +87,74 @@ font-size: 9px;
 line-height: 12px; 
 */
 
+/*TOP NAV*/
+.logo{
+    position: sticky;
+    top: -100px;
+    left: -10px;
+}
+.topnav a{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+.donateMenuButton{
+    
+}
+    
+.topnav{
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: black;
+    opacity: .75;
+    width: 1413px;
+    position: fixed;
+    height: 100px;
+    border-bottom: 1px solid #e2a800;
+    z-index: 1;
+}
+
+/*HOME*/
+
+.homesec{
+    display: block;
+    align-items: center;
+    background-color: #E2A800;
+    height: auto;
+    left: -9.96px;
+    top: 731.84px;
+    color: #474747;
+}
+
+.sloganCard{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 38.93px;
+    top: -690px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #E2A800;
+    border-radius: 10px;
+}
+
+.sloganText{
+    font-size: 24px;
+    text-decoration:  white;
+}
+
+
 /*ABOUT US*/
+<<<<<<< Updated upstream
+=======
 .section{
     display: grid;
     align-items: center;
     background-color: #E2A800;
-    width: 100%;
     height: auto;
     left: -9.96px;
     top: 731.84px;
@@ -103,6 +165,7 @@ line-height: 12px;
     margin-left: 20px;
     
 }
+>>>>>>> Stashed changes
 
 .ourWork{
     position: relative;
@@ -127,11 +190,11 @@ line-height: 12px;
 }
 
 .greyBox{
-    background-color: #DBDBDB;
     display: flex;
+    background-color: #DBDBDB;
 }
 
-.since, .vulnerable{
+.greyText{
     justify-content: space-between;
     padding: 10px;
 }
@@ -143,7 +206,6 @@ line-height: 12px;
     align-items: start;
     justify-content: space-between;
     grid-column-gap: 20px;
-    background-color: #474747;
     color: #E2A800;
     font-family: 'Overpass', sans-serif;
     font-style: normal;
@@ -160,16 +222,73 @@ line-height: 12px;
 .stat3{
     color: #E2A800;
 }
-/* Programs */
+<<<<<<< Updated upstream
 
+.ourTeam{
+    display: flex;
+    align-items: flex-start;
+    color: #E2A800;
+}
+
+.w3-card{
+    width: 160px;
+    height: 240px;
+    background-color: #DBDBDB;
+    box-shadow: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-left: 164px;
+}
+.ourTeam h1{
+    background-color: #E2A800;
+    height: 46px;
+    padding: 10px;
+}
+
+/* Programs */
+=======
+>>>>>>> Stashed changes
+
+
+/* The Latest */
+
+.secLatest{
+    align-content: center;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px;
+ }
+ .LatestCard {
+     display: grid;
+     grid-template-columns: 50% 50%;
+     margin: 20px;
+     width: 800px;
+     padding: 10px 10px;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     border-radius: 10px;
+ }
+
+ .card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ }
+
+ .container {
+ padding: 2px 16px;
+ }
+
+ .latestPhoto{
+     width: 25%;
+ }
+
+
+/* Programs */
 
 #Programssec{
     display: block;
 }
 
-.sectiondivider{
+.sectiondivider {
     display: block;
-    background-color: #00e2b1;
+    background-color: #E2A800;
     width: 100%;
     height: 46px;
     font-family: 'Overpass', sans-serif;
@@ -177,7 +296,6 @@ line-height: 12px;
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-/* or 100% */
     letter-spacing: -0.05em;
 }
 
@@ -258,6 +376,10 @@ line-height: 12px;
 
 /* contact */
 
+.sectionContact{
+    height: 46px;
+}
+
 .section h3{
     margin-left: 20px;
     margin-top: 12px;
@@ -336,6 +458,13 @@ line-height: 12px;
     padding-bottom: 38px;
 }
 
+.footertext ul {
+    color: #E2A800;
+}
+
+.footertext h3 {
+    color: white;
+}
 .horizontalline {
     display: block;
     height: 1px;
@@ -350,4 +479,5 @@ line-height: 12px;
 
 .bottomtext {
     text-align: center;
+    color: #E2A800;
 }

@@ -9,29 +9,130 @@
 </head>
 
     <!--Global Nav--> 
+<header class="TopNav">
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <ul class="NavButtons">
+                <div class="aayhfLogo" href="#home"><img src="Images/aayhf_logo_bg.PNG"></div>
+                <li href="#aboutHeader"><h2>About Us</h2></li>
+                <li href="#secLatest"><h2>The Latest</h2></li>
+                <li href="#"><h2>Programs</h2></li>
+                <li href="#"><h2>Contact Us</h2></li>
+                </ul>
+                <style>
+                    .NavButtons{
+                        list-style: none;
+                    }
+                    .aayhfLogo{
+                        display:flex;
+                        top: 0;
+                    }
+                    .topnav{
+                        display:block
+                        height: 150px;
+                    }
+    
+                </style>
+            </nav>
+        </div>
+<header>
+    <div class="topnav">
+        <li class="NavButtons">
+            <row>
+                <a class="Logo" href="#homesec"><img src="Images/Copy of Logo Transparent.png"></a>
+                <a href="#aboutUs"><h2>About Us</h2></a>
+                <a href="#secLatest"><h2>The Latest</h2></a>
+                <a href="#Programssec"><h2>Programs</h2></a>
+                <a href="#ContactUsSec"><h2>Contact Us</h2></a>
+                <a class="DonateMenuButton" href="donation.html"><h2>Donate</h2></a>
+            </row>
+        </li>
+    </div>
+</header>
 
 
 <body>
    
     <!--Home-->
-    <div class="Home">
+    <div class="section">
+        <section class="home">
         <img src="">
         <h2>Slogan Here</h2>
         <h2>Impact Statment</h2>
 
+        <section id="homesec">
+            <div><img src="Images/Hero.png"></div>
+            <div class="sloganCard">
+                <div class="SloganText">
+                    <p class="yellow">Changing Lives</p>
+                    <p class="white">Building Better</p>
+                    <p class="yellowlg">Futures</p>
+                </div>
+            </div>
+            <div class="impactCard">
+                <div class="impactText">
+                    <p class="yellow">Local, Hands-on Programs Designed to improve the lives of Austin’s African-american and Under-served Communities</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <style>
+        .SloganText{
+            font-size: 32px;
+            text-align: center;
+            color: #FFFFFF;
+            font-family: 'Overpass', sans-serif;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 1px;
+            text-transform: uppercase;
+        }
+        .yellow{
+            color: #E2A800;
+        }
+        .yellowlg{
+            font-size: 60px;
+            color: #E2A800;
+            line-height: -30px;
+        }
+        .white{
+            color: #FFFFFF;
+            letter-spacing: -1px;
+        }
+        .impactCard{
+            position: relative;
+            top: -400px;
+            left: 760px;
+            width: 600px;
+            height: fit-content;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 1px solid #E2A800;
+            border-radius: 10px;
+        }
+        .impactText{
+            font-size: 24px;
+            font-family: 'Overpass', sans-serif;
+            font-style: normal;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+        
+    </style>
+ 
 
     <!--About Us-->
     <div class="section">
-        
-        <div class="aboutHeader">
-            <h3>About Us</h3>
-        </div>
-        <img src="images/yellowstudent.png">
-        <div class="ourWork">
-            <div class="workText">OUR WORK
-            <h5>AAYHF is positioned to effectively leverage community resources to address significant barriers impacting the quality of life for residents in the Eastern Crescent of the City of Austin.</h5>
+        <section id="aboutUSsec">
+            <div class="aboutHeader">
+                <h3>About Us</h3>
             </div>
-        </div>
+            <img src="images/yellowstudent.png">
+            <div class="ourWork">
+                <h5>AAYHF is positioned to effectively leverage community resources to address significant barriers impacting the quality of life for residents in the Eastern Crescent of the City of Austin.</h5>
+                </div>
+            </div>
+        </section>
         
         <section class="greyBox">
             <div class="since">Since 2006, AAYHF, a community-based organization, spearheads mission-aligned and strategic collaborative initiatives to ensure low barrier access to vital resources intended to transition youth and their families to self-sufficiency and community defined success that effectually addresses the social determinants of health, educational success and economic stability throughout the most vulnerable neighborhoods in the City of Austin and Travis County. </div>
@@ -56,6 +157,9 @@
 
         <div class="ourTeam">
             <h1>OUR TEAM</h1>
+            <div class="w3-card">
+                <img src="images/MichaelLofton.png" alt="">
+                CEO
             <div class="team1">
                 <img src="" alt="">
                 <p class="bodyText">CEO
@@ -63,7 +167,7 @@
             </div>
             <div class="team2">
                 <img src="" alt="">
-                <p class="bodyText">
+                <p>
                     Chaiman
  Dawn Tisdale
                 </p>
@@ -97,6 +201,39 @@ Alvin J. Quinton
     </div>
 
     <!--Latest-->
+
+    <div class="section">
+        <section id="secLatest">
+            <div class="sectiondivider">The Latest</div>
+            <div class="LatestCard">
+                <img class=LatestPhoto src="Images/mentor.png" alt="Avatar" style="width: 400px;">
+                <div class="container">
+                  <h4><b>Become a Mentor</b></h4>
+                  <h5>Remote Mentor Meetings for July</h5>
+                  <h5>Thursday July 9th, 6:30-7:30p</h5>    
+                  <p>“Young adults who face an oppurtunity gap but have a mentor are 55% more likely to be enrolled in college than those who did not have a mentor.” (The Mentoring Effect, 2014)</p>
+                </div>
+            </div>
+            <div class="LatestCard">
+                <img class=LatestPhoto src="Images/lookingforwork.png" alt="Avatar" style="width: 400px;">
+                <div class="container">
+                    <h4><b>Looking for Work?</b></h4>  
+                    <p>The City of Austin remains committed to assisting job seekers even during the COVID-19 pandemic.</p>
+                    <p>Search current job openings at:</p>
+                    <p>austincityjobs.com</p>
+                </div>
+            </div>
+            <div class="LatestCard">
+                <img class=LatestPhoto src="Images/meshavillage.png" alt="Avatar" style="width: 400px;">
+                <div class="container">
+                    <h4><b>Mesha's Village x AAYHF</b></h4>
+                    <p>Help Support AAYHF by purcasing a T-shirt from Mesha’s Village, “It Takes A Village” and for every sale, $2 will be donated to the African American Youth Harvest Foundation. 
+                        Click the link to purchase and to learn more about Mesha’s Village and the work they do in Africa.</p>
+                    <p>www.meshasvillage.com</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!--Programs-->
     <section id="Programssec">
@@ -132,30 +269,31 @@ Alvin J. Quinton
 
     <!--Contact Us-->
     <div class="section">
-        <h3>CONTACT US</h3>
-        <div class="newsletter">
-            <h1>&emsp;&emsp;&emsp;&emsp;&emsp;SUSCRIBE TO OUR NESWLETTER</h1>
-            <div style="width:900px; height: 90px; border: 1px solid #E2A800; color: #FFFFFF"><h3>EMAIL</h3></div>
-            <button class="submit">Submit</button>
-        </div>
-        <div class="smalldivider"></div>
-        </div>
-        <div class="contactInfo">
-            <h1>CONTACT US</h1>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-                <div class="email"><h4>Email:</h4></div> 
-                <div class="email"><h3>ContactUs@aayhf.org</h3></div>
-                <div class="phone"><h4>Phone:</h4></div>
-                <div class="phone"><h3>(512) 428-4480</h3></div>
-        </div>
-                <div class="map">
-                <img src="images/map2.png">
-                <h6>6633 US-290 Suite 307, Austin, TX 78723</h6>
+        <section id="ContactUsSec">
+            <h3>CONTACT US</h3>
+            <div class="newsletter">
+                <h1>&emsp;&emsp;&emsp;&emsp;&emsp;SUSCRIBE TO OUR NESWLETTER</h1>
+                <div style="width:900px; height: 90px; border: 1px solid #E2A800; color: #FFFFFF"><h3>EMAIL</h3></div>
+                <button class="submit">Submit</button>
             </div>
-        
-        
+            <div class="smalldivider"></div>
+            </div>
+            <div class="contactInfo">
+                <h1>CONTACT US</h1>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                    <div class="email"><h4>Email:</h4></div> 
+                    <div class="email"><h3>ContactUs@aayhf.org</h3></div>
+                    <div class="phone"><h4>Phone:</h4></div>
+                    <div class="phone"><h3>(512) 428-4480</h3></div>
+            </div>
+                    <div class="map">
+                    <img src="images/map2.png">
+                    <h6>6633 US-290 Suite 307, Austin, TX 78723</h6>
+                </div>
+            
+            
             <div class="form">
                 <h3>FIRST NAME</h3>
                 <div class="formBox" style="width: 388px; height: 75px; border: 3px solid #E2A800;"></div>
@@ -167,6 +305,7 @@ Alvin J. Quinton
                 <div class="formBox" style="width: 815; height: 200px; border: 3px solid #E2A800;"></div>
                 <button class="submit"><h3>Submit</h3></button>
             </div>
+        </section>
     </div>
 
     <!--Global Footer-->
