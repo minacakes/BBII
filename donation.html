@@ -13,29 +13,45 @@
         }
     </style>
 
-<h1>MAKE A DONATION TO AAYHF</h1>
+<h1 class="h1Donation">MAKE A DONATION TO AAYHF</h1>
 
-<form class="donationForm" action="/action_page.php" target="_blank"> 
+<div class="donationForm">
+<!--Can the greater form have div tags within it??? 8/31/20-->
+<form class="donationForm" action="/action_page.php" target="_blank"><!--Greater form beginning (verify attributes???-8/29/20)-->
 
-<div class="donationForm"></div>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
 <!--style="width: 668px; height: 194px; left: 234px; top: 742px; border: 1px solid #E2A800; box-sizing: border-box;"-->
     <div class="chooseAnAmount">
-        <div class="chooseAnAmount">
-        <p class="formLabel">Choose an amount:</p>
+        <div class="formLabel">
+            <style>
+                .formLabel{
+                    grid-row: 1;
+                    grid-column: 4;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            </style>
+            <p>Choose an amount:</p>
+        </div>
     <form>
-            <div class="setAmounts chooseAnAmount">
-                    <div class="tenButton setAmounts chooseAnAmount">
+            <!--<div class="setAmounts">-->
+                    <div class="tenButton">
                     <style>
                         .tenButton {
-                            position: flex;
-                            width: 71px;
-                            height: 33px;
-                            /*left: 407px;
-                            top: 812px;*/
+                            grid-row: 2;
+                            grid-column: 3;
                             border: 2px solid #E2A800;
                             box-sizing: border-box;
                             border-radius: 25px;
-                            position: flex;
                             width: 60px;
                             height: 23px;
                             /*left: 412px;
@@ -50,21 +66,17 @@
                             color: #FFFFFF;
                         }
                     </style>
-                    <element class="tenButton"></element><!--???-->
+                    <element class="tenButton"></element>
                     <label for="tenButton">$10</label>
                     </div><!--$10End-->
-                    <div class="twentyButton setAmounts chooseAnAmount">
+                    <div class="twentyButton">
                     <style>
                         .twentyButton {
-                            position: flex;
-                            width: 71px;
-                            height: 33px;
-                            /*left: 484px;
-                            top: 812px;*/
+                            grid-row: 2;
+                            grid-column: 4;
                             border: 2px solid #E2A800;
                             box-sizing: border-box;
                             border-radius: 25px;
-                            position: flex;
                             width: 60px;
                             height: 23px;
                             /*left: 488px;
@@ -79,21 +91,17 @@
                             color: #FFFFFF;
                         }
                     </style>
-                    <element class="twentyButton"></element><!--???-->
+                    <element class="twentyButton"></element>
                     <label for="twentyButton">$20</label>
                     </div><!--$20End-->
-                    <div class="fiftyButton setAmounts chooseAnAmount">
+                    <div class="fiftyButton">
                         <style>
                             .fiftyButton {
-                                position: flex;
-                                width: 71px;
-                                height: 33px;
-                                /*left: 561px;
-                                top: 812px;*/
+                                grid-row: 2;
+                                grid-column: 5;
                                 border: 2px solid #E2A800;
                                 box-sizing: border-box;
                                 border-radius: 25px;
-                                position: flex;
                                 width: 60px;
                                 height: 23px;
                                 /*left: 567px;
@@ -108,21 +116,17 @@
                                 color: #FFFFFF;
                             }
                         </style>
-                        <element class="fiftyButton"></element><!--???-->
+                        <element class="fiftyButton"></element>
                         <label for="fiftyButton">$50</label>
                         </div><!--$50End-->
-                        <div class="hundredButton setAmounts chooseAnAmount">
+                        <div class="hundredButton">
                             <style>
                                 .hundredButton {
-                                    position: flex;
-                                    width: 71px;
-                                    height: 33px;
-                                    /*left: 638px;
-                                    top: 812px;*/
+                                    grid-row: 2;
+                                    grid-column: 6;
                                     border: 2px solid #E2A800;
                                     box-sizing: border-box;
                                     border-radius: 25px;
-                                    position: flex;
                                     width: 60px;
                                     height: 23px;
                                     /*left: 642px;
@@ -137,19 +141,24 @@
                                     color: #FFFFFF;
                                 }
                             </style>
-                            <element class="hundredButton"></element><!--???-->
+                            <element class="hundredButton"></element>
                             <label for="hundredButton">$100</label>
                         </div><!--$100End-->
+                <!------------------------------------------------------------->
+                <!----------------FIX other FORM INPUT BELOW------------------->
+                <!------------------------------------------------------------->
                         <div class="chooseAnAmount" id="other">
                             <label for="other">Other:</label>
                             <input type="text" id="other" name="other">
                             <style>
                                 #other {
-                                    position: flex;
-                                    /*width: 54px;
+                                    grid-row: 3;
+                                    grid-column: 4;
+                                    width: 54px;
                                     height: 24px;
-                                    left: 410px;
+                                    /*left: 410px;
                                     top: 866px;*/
+                                    color: #FFFFFF;
                                     font-family: Open Sans;
                                     font-style: normal;
                                     font-weight: normal;
@@ -160,30 +169,49 @@
                                 }
                             </style>
                         </div><!--other End-->
-            </div><!--setAmounts END-->
-        </div>
+            <!--</div><!--setAmounts END-->
+        
     </form>
     </div><!--chooseAnAmount END-->
 
-    <div class="chooseAFrequency" style="width: 668px; height: 126px; left: 234px; top: 971px; border: 1px solid #E2A800; box-sizing: border-box;">
-        <p class="chooseAFrequency formLabel">Choose a Frequency</p>
-    <form>
-            <div class="oneTime chooseAFrequency">
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<div class="spaceOne">
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="chooseAFrequency"><!--style="width: 668px; height: 126px; left: 234px; top: 971px; border: 1px solid #E2A800; box-sizing: border-box;"-->
+        <div class="formLabelTwo">
+            <style>
+                .formLabelTwo{
+                    grid-row: 1;
+                    grid-column: 2;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            </style>
+            <p>Choose a Frequency</p>
+        </div>
+    <!--<form>-->
+            <div class="oneTime">
                 <style>
                     .oneTime {
-                        position: absolute;
-                        width: 97px;
-                        height: 33px;
-                        left: 332px;
-                        top: 1037px;
+                        grid-row: 2;
+                        grid-column: 1;
                         border: 2px solid #E2A800;
                         box-sizing: border-box;
                         border-radius: 25px;
-                        position: absolute;
                         width: 86px;
                         height: 23px;
-                        left: 337px;
-                        top: 1042px;
                         font-family: Overpass;
                         font-style: normal;
                         font-weight: normal;
@@ -194,25 +222,20 @@
                         color: #FFFFFF;
                     }
                 </style>
-                <element class="oneTime"></element><!--???-->
+                <element class="oneTime"></element>
                 <label for="oneTime">One-Time</label>
             </div>
-            <div class="monthly chooseAFrequency">
+            <div class="monthly">
                 <style>
                     .monthly {
-                        position: absolute;
-                        width: 95px;
-                        height: 33px;
-                        left: 526px;
-                        top: 1037px;
+                        grid-row: 2;
+                        grid-column: 2;
                         border: 2px solid #E2A800;
                         box-sizing: border-box;
                         border-radius: 25px;
                         position: absolute;
                         width: 86px;
                         height: 23px;
-                        left: 530px;
-                        top: 1042px;
                         font-family: Overpass;
                         font-style: normal;
                         font-weight: normal;
@@ -223,25 +246,19 @@
                         color: #FFFFFF;
                     }
                 </style>
-                <element class="monthly"></element><!--???-->
+                <element class="monthly"></element>
                 <label for="monthly">Monthly</label>
             </div>
-            <div class="annually chooseAFrequency">
+            <div class="annually">
                 <style>
                     .annually {
-                        position: absolute;
-                        width: 93px;
-                        height: 33px;
-                        left: 728px;
-                        top: 1037px;
+                        grid-row: 2;
+                        grid-column: 3;
                         border: 2px solid #E2A800;
                         box-sizing: border-box;
                         border-radius: 25px;
-                        position: absolute;
                         width: 86px;
                         height: 23px;
-                        left: 730px;
-                        top: 1042px;
                         font-family: Overpass;
                         font-style: normal;
                         font-weight: normal;
@@ -252,76 +269,197 @@
                         color: #FFFFFF;
                     }
                 </style>
-                <element class="annually"></element><!--???-->
+                <element class="annually"></element>
                 <label for="annually">Annually</label>
             </div>
     </form>
     </div><!--chooseAFrequency END-->
 
-    
 
-    <div class="paymentInformation" style="width: 668px; height: 259px; left: 235px; top: 1132px; border: 1px solid #E2A800; box-sizing: border-box;">
-        <h5 class="formHeader">Payment Information</h5>
-        <p class="formLabel">(Required)</p>
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<div class="spaceOne">
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!--FLEX POSITIONING FOR PAYMENT INFO-->
+    <!--<style>
+        .paymentInformation{
+            /*display: flex;
+            flex-direction: row; 
+            padding-left: 29px;
+            padding-top: 25px;
+            padding-right: 25px;
+            padding-bottom: 210px;*/
+        }
+        .paymentInformation div{
+            /*border: 1px solid #E2A800;
+            box-sizing: border-box;
+            /*???>>>box-sizing: background-origin: padding-box;*/
+            /*position: absolute;
+            width: 668px;
+            height: 259px;
+            left: 235px;
+            top: 1132px;*/
+        }
+            .paymentInfoHeader{
+                display: grid;
+                size: 668px;
+                grid-column-gap: auto auto auto auto;
+                /*display: flex;
+                flex-direction: row;*/
+            }
+            .PIHcont{
+            }
+            .payPalButton{
+            }
+        /*.ccInfo{
+            display: flex;
+            flex-direction: row;
+        }*/
+            .ccNumberPaymentInfo{
+
+            }
+            .expDatePaymentInfo{
+            }
+            .cvvNumberPaymentInfo{
+            }
+    </style>-->
+
+    <!--    <div class="paymentInformation"><!--style="width: 668px; height: 259px; left: 235px; top: 1132px; border: 1px solid #E2A800; box-sizing: border-box;"-->
+        <!--    <div class="paymentInfoHeader"><!--ENTER TEXT STYLING + LINE HEIGHT!!!
+            <!--<div class="PIHcont">
+                <h5 class="formHeader">Payment Information</h5>
+                <p class="formLabel">(Required)</p>
+            <!--</div>
+        </div>-->
         <!--<h6 class="formLabel">(Required)</h6>^^^-->
-            <div class="payPal">
+            <!--<div class="payPalButton">
             <p class="formButtonsText">Paypal</p>
             </div>
+        </div>
+
+        <div class="ccInfo">
+            <div class="ccNumberPaymentInfo">
             <label for="ccNumber">Credit Card Number</label><br>
             <input type="text" id="ccNumber" name="ccNumber"><br>
-            
+            </div>
+            <div class="expDatePaymentInfo">
             <label for="expDate">Expiration Date</label><br>
             <input type="text" id="expDate" name="expDate"><br>
-            
+            </div>
+            <div class="cvvNumberPaymentInfo">
             <label for="cvvNumber">CVV Number</label><br>
             <input type="text"id="cvvNumber" name="cvvNumber"><br>
+            </div>
+        </div><!--.ccInfo div END-->
+    <!--</div><!--paymentInformation END-->
+
+    <!--DIV for Space Between form flex segments???-->
+    <!--<style>
+        .spaceBetweenFormSegments{
+        }
+    </style>
+    <div class="spaceBetweenFormSegments">
+
     </div>
 
-    <div class="billingInformation" style="width: 668px; height: 677px; left: 235px; top: 1424px; border: 1px solid #E2A800; box-sizing: border-box;">
-        <div class="billingInformation">
-        <h5 class="formHeader">Billing Information</h5>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<div class="spaceOne">
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!--FLEX POSITIONING FOR BILLING INFO-->
+    <!--<style>
+        .billingInformation{
+            display: flex;
+            /*border: 1px solid #E2A800;*/
+        }
+        .billingInformation div{
+            
+        }
+            .firstName{
+
+            }
+            .lastName{
+
+            }
+            .addressLineOne{
+
+            }
+            .addressLineTwo{
+
+            }
+            .cityBillingInfoDIv{
+
+            }
+            .stateBillingInfoDiv{
+
+            }
+            .zipCodeBillingInfoDiv{
+
+            }
+            .emailBillingInfoDiv{
+
+            }
+            .confirmEmailBillingInfoDiv{
+
+            }
+    </style>
+
+    <div class="billingInformation"> <!--style="width: 668px; height: 677px; left: 235px; top: 1424px; border: 1px solid #E2A800; box-sizing: border-box;"-->
+        <!--<h5 class="formHeader">Billing Information</h5>
         <h6 class="formLabel">(Required)</h6>
-        </div>
             <form>
-                <div class="billingInformation">
+                <div class="firstName">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname"><br>
                 </div>
-                <div class="billingInformation">
+                <div class="lastName">
                 <label for="lname">Last name:</label><br>
                 <input type="text" id="lname" name="lname"><br>
                 </div>
-                <div class="billingInformation">
+                <div class="addressLineOne">
                 <label for="address1">Address Line 1</label><br>
                 <input type="text"id="address1" name="address1"><br>
                 </div>
-                <div class="billingInformation">
+                <div class="addressLineTwo">
                 <label for="address2">Address Line 2</label><br>
                 <input type="text" id="address2" name="address2"><br>
                 </div>
-                <div class="billingInformation">
+                <div class="cityBillingInfoDiv">
                 <label for="city">City</label><br>
                 <input type="text" id="city" name="city"><br>
                 </div>
-                <div class="billingInformation">
+                <div class="stateBillingInfoDiv">
                 <label for="state">State</label><br>
                 <input type="text" id="state" name="state"><br>
                 </div>
-                <div class="billingInformation">
+                <div class="zipCodeBillingInfoDiv">
                 <label for="zipCode">Zip Code</label><br>
                 <input type="text" id="zipCode" name="zipCode"><br>
                 </div>
-                <div class="billingInformation">
+                <div class="emailBillingInfoDiv">
                 <label for="email">Email</label><br>
                 <input type="text" id="email" name="email"><br>
                 </div>
-                <div class="billingInformation">
+                <div class="confirmEmailBillingInfoDiv">
                 <label for="confirmEmail">Confirm Email</label><br>
                 <input type="text" id="confirmEmail" name="confirmEmail"><br>
                 </div>
             </form>
             
-            <style>
+            <style>/*CHECK IF FITS IN FORM!!! 8/28/20*/
                 .button {
                     border: 2px solid #E2A800;
                     box-sizing: border-box;
@@ -355,16 +493,30 @@
         <p class="formButtonsTextTwo">Make a Donation to AAYHF</p>-->
 
         
-    </div>
+    <!--</div><!--billingInformation END-->
     
-</form>
+<!----------------------------------------------------------------------------------------------------------------------------->
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------------------------->
+</form><!--Greater form END-->
 
 </div><!--Make_a_Donation END-->
 
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<div class="spaceOne">
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------->
 
     <!--Global Footer-->
     <section id="footersec">
