@@ -118,7 +118,7 @@
                         </style>
                         <element class="fiftyButton"></element>
                         <label for="fiftyButton">$50</label>
-                        </div><!--$50End-->
+                    </div><!--$50End-->
                         <div class="hundredButton">
                             <style>
                                 .hundredButton {
@@ -233,7 +233,6 @@
                         border: 2px solid #E2A800;
                         box-sizing: border-box;
                         border-radius: 25px;
-                        position: absolute;
                         width: 86px;
                         height: 23px;
                         font-family: Overpass;
@@ -330,43 +329,99 @@
             }
     </style>-->
 
-    <!--    <div class="paymentInformation"><!--style="width: 668px; height: 259px; left: 235px; top: 1132px; border: 1px solid #E2A800; box-sizing: border-box;"-->
-        <!--    <div class="paymentInfoHeader"><!--ENTER TEXT STYLING + LINE HEIGHT!!!
-            <!--<div class="PIHcont">
-                <h5 class="formHeader">Payment Information</h5>
-                <p class="formLabel">(Required)</p>
-            <!--</div>
-        </div>-->
-        <!--<h6 class="formLabel">(Required)</h6>^^^-->
-            <!--<div class="payPalButton">
-            <p class="formButtonsText">Paypal</p>
-            </div>
+    <div class="paymentInformation"><!--style="width: 668px; height: 259px; left: 235px; top: 1132px; border: 1px solid #E2A800; box-sizing: border-box;"-->
+        <div class="paymentInfoHeader"><!--ENTER TEXT STYLING + LINE HEIGHT!!!-->
+                <h6 class="formLabel">Payment Information<br>(Required)</h6>
+                <style>
+                    .paymentInfoHeader{
+                        grid-row: 1;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                    }
+                </style>
         </div>
-
-        <div class="ccInfo">
-            <div class="ccNumberPaymentInfo">
+        <div class="payPalButton">
+            <style>
+                .payPalButton{
+                    grid-row: 1;
+                    grid-column: 2;
+                    border: 2px solid #E2A800;
+                    box-sizing: border-box;
+                    border-radius: 25px;
+                    width: 145px;
+                    height: 41px;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            </style>
+            <p>Paypal</p>
+        </div>
+        <div class="ccNumberPaymentInfo">
+            <style>
+                .ccNumberPaymentInfo{
+                    grid-row: 2;
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+                input [type=text]{
+                    width: 591px;
+                }
+            </style>
             <label for="ccNumber">Credit Card Number</label><br>
             <input type="text" id="ccNumber" name="ccNumber"><br>
-            </div>
-            <div class="expDatePaymentInfo">
-            <label for="expDate">Expiration Date</label><br>
-            <input type="text" id="expDate" name="expDate"><br>
-            </div>
-            <div class="cvvNumberPaymentInfo">
+        </div>
+        <div class="cvvNumberPaymentInfo">
+            <style>
+                .cvvNumberPaymentInfo{
+                    grid-row: 3;
+                    grid-column: 2;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+                input [type=text]{
+                    width: 591px;
+                }
+            </style>
             <label for="cvvNumber">CVV Number</label><br>
             <input type="text"id="cvvNumber" name="cvvNumber"><br>
-            </div>
-        </div><!--.ccInfo div END-->
-    <!--</div><!--paymentInformation END-->
+        </div>
+        <div class="expDatePaymentInfo">
+            <style>
+                .expDatePaymentInfo{
+                    grid-row: 3;
+                    grid-column: 1;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+                input [type=text]{
+                    width: 591px;
+                }
+            </style>
+            <label for="expDate">Expiration Date</label><br>
+            <input type="text" id="expDate" name="expDate"><br>
+        </div>
 
-    <!--DIV for Space Between form flex segments???-->
-    <!--<style>
-        .spaceBetweenFormSegments{
-        }
-    </style>
-    <div class="spaceBetweenFormSegments">
+    </div><!--paymentInformation END-->
 
-    </div>
 
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -415,10 +470,10 @@
             .confirmEmailBillingInfoDiv{
 
             }
-    </style>
+    </style>-->
 
     <div class="billingInformation"> <!--style="width: 668px; height: 677px; left: 235px; top: 1424px; border: 1px solid #E2A800; box-sizing: border-box;"-->
-        <!--<h5 class="formHeader">Billing Information</h5>
+        <h5 class="formHeader">Billing Information</h5>
         <h6 class="formLabel">(Required)</h6>
             <form>
                 <div class="firstName">

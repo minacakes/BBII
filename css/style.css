@@ -222,31 +222,6 @@ line-height: 12px;
 .stat3{
     color: #E2A800;
 }
-<<<<<<< Updated upstream
-
-.ourTeam{
-    display: flex;
-    align-items: flex-start;
-    color: #E2A800;
-}
-
-.w3-card{
-    width: 160px;
-    height: 240px;
-    background-color: #DBDBDB;
-    box-shadow: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    margin-left: 164px;
-}
-.ourTeam h1{
-    background-color: #E2A800;
-    height: 46px;
-    padding: 10px;
-}
-
-/* Programs */
-=======
->>>>>>> Stashed changes
 
 
 /* The Latest */
