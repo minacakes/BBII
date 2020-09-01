@@ -226,6 +226,8 @@ line-height: 12px;
     background-color: #E2A800;
     height: 46px;
     padding: 10px;
+    rotate: 90deg;
+    color: white;
 }
 
 /* Programs */
