@@ -149,23 +149,7 @@ line-height: 12px;
 
 
 /*ABOUT US*/
-<<<<<<< Updated upstream
-=======
-.section{
-    display: grid;
-    align-items: center;
-    background-color: #E2A800;
-    height: auto;
-    left: -9.96px;
-    top: 731.84px;
-    color: #474747;
-}
 
-.aboutHeader{
-    margin-left: 20px;
-    
-}
->>>>>>> Stashed changes
 
 .ourWork{
     position: relative;
@@ -176,6 +160,7 @@ line-height: 12px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
     border-radius: 10px;
+    color: #E2A800;
 }
 
 .workText{
@@ -222,7 +207,6 @@ line-height: 12px;
 .stat3{
     color: #E2A800;
 }
-<<<<<<< Updated upstream
 
 .ourTeam{
     display: flex;
@@ -245,8 +229,6 @@ line-height: 12px;
 }
 
 /* Programs */
-=======
->>>>>>> Stashed changes
 
 
 /* The Latest */
@@ -416,13 +398,25 @@ line-height: 12px;
 }
 
 .contactInfo{
-    margin-top: 400px;
     margin-left: 62px;
-    display: flex;
-    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
     color: #E2A800;
-    flex-direction: column;
+    grid-template-areas: "h1 h1 h1"
+    "ul ul map";
 }
+.contactInfo h1{
+    grid-area: h1;
+}
+.contactInfo ul{
+    list-style: none;
+    grid-area: ul;
+}
+.map{
+    grid-area: map;
+}
+
 
 .map{
     display: grid;
