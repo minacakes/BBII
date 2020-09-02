@@ -158,29 +158,6 @@ line-height: 12px;
     color: #E2A800;
 }
 
-.sectiondivider{
-    display: block;
-    background-color: #E2A800;
-    width: auto;
-    height: 46px;
-}
-
-.smalldivider{
-    display: block;
-    background-color: #E2A800;
-    width: auto;
-    height: 22px;
-
-}
-
-.footertext{
-    display:grid;
-    grid-template-columns: 20px 10px 10px;
-    
-background: #474747;
-
-
-
 /*footer*/
 
 .sectiondivider {
@@ -376,6 +353,13 @@ background: #474747;
     padding-bottom: 38px;
 }
 
+.footertext ul {
+    color: #E2A800;
+}
+
+.footertext h3 {
+    color: white;
+}
 .horizontalline {
     display: block;
     height: 1px;
@@ -390,4 +374,5 @@ background: #474747;
 
 .bottomtext {
     text-align: center;
+    color: #E2A800;
 }
