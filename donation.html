@@ -350,12 +350,17 @@
                     border-radius: 25px;
                     width: 145px;
                     height: 41px;
+                    padding-top: 2px;
+                    padding-bottom: 12px;
+                    padding-left: 54px;
+                    padding-right: 40px;
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 24px;
-                    text-align: center;
+                    line-height: 0px;
+                    text-align: start;
+                    align-self: center;
                     color: #FFFFFF;
                 }
             </style>
@@ -365,32 +370,36 @@
             <style>
                 .ccNumberPaymentInfo{
                     grid-row: 2;
-                    grid-column-start: 1;
-                    grid-column-end: 2;
+                    grid-column: 1;
+                    /*justify-self: ;*/
+                    justify-self: left;
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 36px;
+                    line-height: 30px;/* <<< 36px ORIGINALLY*/
                     color: #FFFFFF;
                 }
-                input [type=text]{
+                input [type="text" id="ccNumberPaymentInfo" name="ccNumberPaymentInfo" class="ccNumberPaymentInfo"]{
                     width: 591px;
+                    height: 5px;
                 }
             </style>
-            <label for="ccNumber">Credit Card Number</label><br>
-            <input type="text" id="ccNumber" name="ccNumber"><br>
+            <label for="ccNumberPaymentInfo">Credit Card Number</label><br>
+            <input type="text" id="#ccNumberPaymentInfo" name="ccNumberPaymentInfo" class="ccNumberPaymentInfo">
         </div>
         <div class="cvvNumberPaymentInfo">
             <style>
                 .cvvNumberPaymentInfo{
                     grid-row: 3;
                     grid-column: 2;
+                    justify-self: right;
+                    align-self: center  ;
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 36px;
+                    line-height: 30px;/* <<< 36px ORIGINALLY*/
                     color: #FFFFFF;
                 }
                 input [type=text]{
@@ -398,7 +407,7 @@
                 }
             </style>
             <label for="cvvNumber">CVV Number</label><br>
-            <input type="text"id="cvvNumber" name="cvvNumber"><br>
+            <input type="text"id="cvvNumber" name="cvvNumber">
         </div>
         <div class="expDatePaymentInfo">
             <style>
@@ -409,7 +418,7 @@
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 36px;
+                    line-height: 30px;/* <<< 36px ORIGINALLY*/
                     color: #FFFFFF;
                 }
                 input [type=text]{
@@ -417,9 +426,8 @@
                 }
             </style>
             <label for="expDate">Expiration Date</label><br>
-            <input type="text" id="expDate" name="expDate"><br>
+            <input type="text" id="expDate" name="expDate">
         </div>
-
     </div><!--paymentInformation END-->
 
 
@@ -434,7 +442,7 @@
 <!----------------------------------------------------------------------------------------------------------------------------->
 
 
-    <!--FLEX POSITIONING FOR BILLING INFO-->
+    <!--OLD FLEX POSITIONING FOR BILLING INFO-->
     <!--<style>
         .billingInformation{
             display: flex;
@@ -473,60 +481,199 @@
     </style>-->
 
     <div class="billingInformation"> <!--style="width: 668px; height: 677px; left: 235px; top: 1424px; border: 1px solid #E2A800; box-sizing: border-box;"-->
-        <h5 class="formHeader">Billing Information</h5>
-        <h6 class="formLabel">(Required)</h6>
-            <form>
+        <div class="billingInfoHeader"></div>
+            <h6 class="formLabel billingInfoHeader">Billing Information<br>(Required)</h6>
+            <style>
+                .billingInfoHeader{
+                    grid-row: 1;
+                    grid-column: 1;
+                }
+            </style>
+        </div>
+        <!--<form>-->
                 <div class="firstName">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
+                    <style>
+                    .firstName{
+                    grid-row: 2;
+                    grid-column: 1;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    input [type=text]{
+                    width: 591px;
+                    }
+                    </style>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
                 </div>
                 <div class="lastName">
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname"><br>
+                    <style>
+                    .lastName{
+                    grid-row: 2;
+                    grid-column: 3;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    /*input [type=text]{
+                    width: 591px;
+                    }*/
+                    </style>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
                 </div>
                 <div class="addressLineOne">
-                <label for="address1">Address Line 1</label><br>
-                <input type="text"id="address1" name="address1"><br>
+                    <style>
+                    .addressLineOne{
+                    grid-row: ;
+                    grid-column: ;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    /*input [type=text]{
+                    width: 591px;
+                    }*/
+                    </style>
+                    <label for="address1">Address Line 1</label><br>
+                    <input type="text"id="address1" name="address1"><br>
                 </div>
                 <div class="addressLineTwo">
-                <label for="address2">Address Line 2</label><br>
-                <input type="text" id="address2" name="address2"><br>
+                    <style>
+                    .addressLineTwo{
+                    grid-row: 4;
+                    grid-column: 1;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    /*input [type=text]{
+                    width: 591px;
+                    }*/
+                    </style>
+                    <label for="address2">Address Line 2</label><br>
+                    <input type="text" id="address2" name="address2"><br>
                 </div>
                 <div class="cityBillingInfoDiv">
-                <label for="city">City</label><br>
-                <input type="text" id="city" name="city"><br>
+                    <style>
+                    .cityBillingInfoDiv{
+                    grid-row: 5;
+                    grid-column: 1;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    /*input [type=text]{
+                    width: 591px;
+                    }*/
+                    </style>
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city"><br>
                 </div>
                 <div class="stateBillingInfoDiv">
-                <label for="state">State</label><br>
-                <input type="text" id="state" name="state"><br>
+                    <style>
+                    .stateBillingInfoDiv{
+                    grid-row: 5;
+                    grid-column: 2;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    /*input [type=text]{
+                    width: 591px;
+                    }*/
+                    </style>
+                    <label for="state">State</label><br>
+                    <input type="text" id="state" name="state"><br>
                 </div>
                 <div class="zipCodeBillingInfoDiv">
-                <label for="zipCode">Zip Code</label><br>
-                <input type="text" id="zipCode" name="zipCode"><br>
+                    <style>
+                    .zipCodeBillingInfoDiv{
+                    grid-row: 5;
+                    grid-column: 3;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    /*input [type=text]{
+                    width: 591px;
+                    }*/
+                    </style>
+                    <label for="zipCode">Zip Code</label><br>
+                    <input type="text" id="zipCode" name="zipCode"><br>
                 </div>
                 <div class="emailBillingInfoDiv">
-                <label for="email">Email</label><br>
-                <input type="text" id="email" name="email"><br>
+                    <style>
+                    .emailBillingInfoDiv{
+                    grid-row: 6;
+                    grid-column: 2;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    /*input [type=text]{
+                    width: 591px;
+                    }*/
+                    </style>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email"><br>
                 </div>
                 <div class="confirmEmailBillingInfoDiv">
-                <label for="confirmEmail">Confirm Email</label><br>
-                <input type="text" id="confirmEmail" name="confirmEmail"><br>
+                    <style>
+                    .confirmEmailBillingInfoDiv{
+                    grid-row: 6;
+                    grid-column: 2;
+                    font-family: Overpass;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                    }
+                    /*input [type=text]{
+                    width: 591px;
+                    }*/
+                    </style>
+                    <label for="confirmEmail">Confirm Email</label><br>
+                    <input type="text" id="confirmEmail" name="confirmEmail"><br>
                 </div>
-            </form>
-            
-            <style>/*CHECK IF FITS IN FORM!!! 8/28/20*/
-                .button {
+                <div class="submitDonationButton">
+                    <style>/*CHECK IF FITS IN FORM!!! 8/28/20*/
+                    .donationSubmit{
+                    grid-row: 7;
+                    grid-column: 2;
                     border: 2px solid #E2A800;
                     box-sizing: border-box;
-                    border-radius: 25px;  
-                    position: absolute;
+                    border-radius: 25px;
                     width: 389px;
                     height: 50px;
-                    left: 380px;
-                    top: 1988px;
                     color: white;
                     padding: 15px 32px;
-                    text-align: center;
                     text-decoration: none;
                     display: inline-block;
                     font-size: 24px;
@@ -538,17 +685,13 @@
                     letter-spacing: -0.05em;
                     margin: 4px 2px;
                     cursor: pointer;
-                }
-            </style>
-            <element class="button">
-            <label for="button">Make a Donation to AAYHF</label>
-
-            
-            <!--<div class="makeADonationToAAYHF">
-        <p class="formButtonsTextTwo">Make a Donation to AAYHF</p>-->
-
-        
-    <!--</div><!--billingInformation END-->
+                    }
+                    </style>
+                    <element class="donationSubmit"></element>
+                    <label for="donationSubmit">Make a Donation to AAYHF</label>
+                </div>
+            <!--</form>-->
+    </div><!--billingInformation END-->
     
 <!----------------------------------------------------------------------------------------------------------------------------->
 
