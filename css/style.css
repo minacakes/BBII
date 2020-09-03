@@ -150,7 +150,6 @@ line-height: 12px;
 
 /*ABOUT US*/
 
-
 .ourWork{
     position: relative;
     width: 258.33px;
@@ -161,22 +160,24 @@ line-height: 12px;
     border: 1px solid #E2A800;
     border-radius: 10px;
     color: #E2A800;
+    padding: 5px;
 }
 
-.workText{
-    padding: 10px;
-    font-family: 'Overpass', sans-serif;
-    font-style: bold;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: .5px;
-    color: #E2A800;
-    margin-top: 20px;
+.ourWork h5{
+    padding: 5px;
+}
+
+.aboutWork{
+    background: url(../images/yellowstudent.png);
+    background-size: cover;
+    height: 738px;
 }
 
 .greyBox{
     display: flex;
     background-color: #DBDBDB;
+    padding: 5px;
+    margin-top: 0;
 }
 
 .greyText{
@@ -359,12 +360,7 @@ line-height: 12px;
 
 
 /* contact */
-
-.sectionContact{
-    height: 46px;
-}
-
-.section h3{
+.form h3{
     margin-left: 20px;
     margin-top: 12px;
 }
@@ -428,10 +424,48 @@ line-height: 12px;
 
 .form{
     display: grid;
-    margin-left: 20px;
     color: white;
+    grid-template-rows: 37px 107px 37px 107px 37px 207px 100px;
+    grid-template-columns: 406px 406px;
+    grid-template-areas: 
+                    "nameText LnameText"
+                    "nameBox LnameBox"
+                    "emailText emailText"
+                    "emailBox emailBox"
+                    "msgText msgText"
+                    "msgBox msgBox"
+                    "formSubmit formSubmit";
+    justify-content: center;
+}
+.nameText{
+    grid-area: nameText;
+}
+.nameBox{
+    grid-area: nameBox;
+}
+.LnameText{
+    grid-area: LnameText;
+}
+.LnameBox{
+    grid-area: LnameBox;
+    margin-left: 12px;
+}
+.emailText{
+    grid-area: emailText;
+}
+.emailBox{
+    grid-area: emailBox;
+}
+.msgText{
+    grid-area: msgText;
+}
+.msgBox{
+    grid-area: msgBox;
 }
 
+.formSubmit{
+    grid-area: formSubmit;
+}
 
 /*footer*/
 .footer {
