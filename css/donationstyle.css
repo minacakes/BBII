@@ -156,15 +156,16 @@ line-height: 12px;
         grid-column: 1;--
         /*^position in greater grid^*/
         display: grid;
-        grid-template-rows: 25px, auto, auto;
+        grid-template-rows: 44px, 50px, auto;
         grid-template-columns: 290px, 290px;
         justify-content: unset;
         align-content: unset;
-        grid-row-gap: 4px, 4px;
+        grid-row-gap: 16px, 26px;
         grid-column-gap: 18px;
         padding-right: 40px;/* < < < get proper bottom padding px count*/
         padding-left: 30px;
-        padding-bottom: 30px;/* < < < get proper bottom padding px count*/
+        /*padding-top: 12px;*/
+        padding-bottom: 10px;/* < < < get proper bottom padding px count*/
         width: 668px;
         height: 300px;
         border: 1px solid #E2A800;
@@ -179,14 +180,16 @@ line-height: 12px;
         grid-column: 1;--
         /*^position in greater grid^*/
         display: grid;
-        grid-template-rows: 24px, auto, auto, auto, auto, auto, 174px;/*7*/
-        grid-template-columns: auto, auto, 190px;/*3*/
-        grid-row-gap: 10px;
-        grid-column-gap: auto;
+        grid-template-rows: 7;/*7*//*44px, auto, auto, auto, auto, auto, 174px*/
+        grid-template-columns: 2;/*3*//*auto, auto, 190px*/
+        grid-row-gap: unset;
+        grid-column-gap: unset;
+        justify-content: left;
+        align-content: unset;
         /*align-content: ;*/
         padding-left: 35px;
         padding-bottom: 60px;
-        padding-top: 12px;
+        /*padding-top: 12px;*/
         width: 668px;
         height: 677px;
         border: 1px solid #E2A800;
