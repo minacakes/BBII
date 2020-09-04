@@ -380,6 +380,7 @@ line-height: 12px;
     justify-content: center;
     align-items: center;
 }
+ 
 
 
 .smalldivider{
@@ -390,6 +391,45 @@ line-height: 12px;
     position: relative;
 }
 
+.translucent-form-overlay {
+    margin: auto;
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 20px;
+    margin-top: 300px;
+    display: none;
+    z-index: 1;
+    color: white;
+
+}
+
+.columns.row {
+    display: block;
+    }
+
+
+.row {
+        display: inline-block;
+    }
+
+  
+h3, label {
+    color: white;
+    }
+
+input, select {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: #E2A800;
+    border-radius: 5px;
+    color: dark-gray;
+    }
+    
+input::placeholder {
+    color: dark-gray;
+    }
+  
 
 .selectionbox1 {
     position: absolute;
@@ -409,6 +449,8 @@ line-height: 12px;
     align-items: center;
     position: relative;
 }
+
+
 
 
 .selectionbox2 {
