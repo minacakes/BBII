@@ -1,5 +1,5 @@
 body{
-    background-color: #474747;
+    background-color: #474747!important;
     margin: 0;
     padding: 0;
 }
@@ -87,6 +87,42 @@ font-size: 9px;
 line-height: 12px; 
 */
 
+
+/*Bootstrap NAVBAR*/
+.header {
+   Height: 85px;
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    bottom: 85px;   
+    border-bottom: 1px solid #e2a800;
+    text-align: center;
+
+  }
+
+.aayhLogo {
+    height: 85px;
+}
+
+.nav-item {
+    float: left;
+    list-style: none;
+    text-align: center;
+    display: block;
+    padding: 16pt;
+}
+
+.nav-link{
+    float: left;
+    padding: 16pt;
+}
+
 /*TOP NAV*/
 .logo{
     position: sticky;
@@ -97,7 +133,6 @@ line-height: 12px;
         float: left;
         color: #f2f2f2;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
       }
@@ -179,12 +214,11 @@ line-height: 12px;
     
 }
 
-.smallHero{
-    display: none;
-}
+
 /*ABOUT US*/
 #aboutUSsec{
     display: grid;
+    height: 783px;
 }
 
 .ourWork{
@@ -646,5 +680,3 @@ input::placeholder {
     .smallHero{
         display: block;
     }
-
-}
