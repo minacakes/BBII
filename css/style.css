@@ -1,5 +1,5 @@
 body{
-    background-color: #474747;
+    background-color: #474747!important;
     margin: 0;
     padding: 0;
 }
@@ -87,6 +87,42 @@ font-size: 9px;
 line-height: 12px; 
 */
 
+
+/*Bootstrap NAVBAR*/
+.header {
+   Height: 85px;
+}
+
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    bottom: 85px;   
+    border-bottom: 1px solid #e2a800;
+    text-align: center;
+
+  }
+
+.aayhLogo {
+    height: 85px;
+}
+
+.nav-item {
+    float: left;
+    list-style: none;
+    text-align: center;
+    display: block;
+    padding: 16pt;
+}
+
+.nav-link{
+    float: left;
+    padding: 16pt;
+}
+
 /*TOP NAV*/
 .logo{
     position: sticky;
@@ -97,7 +133,6 @@ line-height: 12px;
         float: left;
         color: #f2f2f2;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
       }
@@ -120,31 +155,63 @@ line-height: 12px;
 }
 
 /*HOME*/
-
-.homesec{
+.section{
     display: block;
+}
+
+#homesec{
     align-items: center;
-    background-color: #E2A800;
-    height: auto;
-    left: -9.96px;
-    top: 731.84px;
     color: #474747;
+    width: auto;
+    height: 640px;
 }
 
 .sloganCard{
     position: relative;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
-    left: 38.93px;
-    top: -690px;
+    top: -580px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
     border-radius: 10px;
 }
 
-.sloganText{
-    font-size: 24px;
-    text-decoration:  white;
+.SloganText{
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1px;
+    text-transform: uppercase;
+}
+.yellow{
+    color: #E2A800;
+}
+.yellowlg{
+    font-size: 60px;
+    color: #E2A800;
+    line-height: -30px;
+}
+.white{
+    color: #FFFFFF;
+    letter-spacing: -1px;
+}
+
+.impactCard{
+    position: relative;
+    width: 600px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #E2A800;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border: 1px solid #E2A800;
+    border-radius: 10px;
+    margin-left: 550px;
+    top: -500px;
+    
 }
 
 
@@ -159,7 +226,7 @@ line-height: 12px;
     width: 258.33px;
     height: 226.48px;
     left: 38.93px;
-    top: -600px;
+    top: 100px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
     border-radius: 10px;
@@ -345,6 +412,7 @@ line-height: 12px;
     justify-content: center;
     align-items: center;
 }
+ 
 
 
 .smalldivider{
@@ -355,6 +423,45 @@ line-height: 12px;
     position: relative;
 }
 
+.translucent-form-overlay {
+    margin: auto;
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 20px;
+    margin-top: 300px;
+    display: none;
+    z-index: 1;
+    color: white;
+
+}
+
+.columns.row {
+    display: block;
+    }
+
+
+.row {
+        display: inline-block;
+    }
+
+  
+h3, label {
+    color: white;
+    }
+
+input, select {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: #E2A800;
+    border-radius: 5px;
+    color: dark-gray;
+    }
+    
+input::placeholder {
+    color: dark-gray;
+    }
+  
 
 .selectionbox1 {
     position: absolute;
@@ -374,6 +481,8 @@ line-height: 12px;
     align-items: center;
     position: relative;
 }
+
+
 
 
 .selectionbox2 {
@@ -560,3 +669,14 @@ line-height: 12px;
     text-align: center;
     color: #E2A800;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:450px){
+    .hero img{
+        display: none;
+    }
+
+    .smallHero{
+        display: block;
+    }

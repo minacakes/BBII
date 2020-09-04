@@ -328,6 +328,13 @@ background: #474747;
     padding-bottom: 38px;
 }
 
+.footertext ul {
+    color: #E2A800;
+}
+
+.footertext h3 {
+    color: white;
+}
 .horizontalline {
     display: block;
     height: 1px;
@@ -342,4 +349,5 @@ background: #474747;
 
 .bottomtext {
     text-align: center;
+    color: #E2A800;
 }
