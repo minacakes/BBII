@@ -1,5 +1,7 @@
 body{
     background-color: #474747;
+    margin: 0;
+    padding: 0;
 }
 
 /* Color Palette 
@@ -15,8 +17,6 @@ h1{
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
-
-/* or 100% */
     text-transform: uppercase;
 }
 
@@ -61,7 +61,7 @@ h6{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 14px;
 }
 
 /* menu text
@@ -149,7 +149,10 @@ line-height: 12px;
 
 
 /*ABOUT US*/
-
+#aboutUSsec{
+    display: grid;
+    height: 783px;
+}
 
 .ourWork{
     position: relative;
@@ -161,25 +164,26 @@ line-height: 12px;
     border: 1px solid #E2A800;
     border-radius: 10px;
     color: #E2A800;
+    padding: 5px;
 }
 
-.workText{
-    padding: 10px;
-    font-family: 'Overpass', sans-serif;
-    font-style: bold;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: .5px;
-    color: #E2A800;
-    margin-top: 20px;
+.ourWork h5{
+    padding: 5px;
+}
+
+.aboutWork{
+    background: url(../images/yellowstudent.png);
+    background-size: cover;
+    height: 738px;
 }
 
 .greyBox{
     display: flex;
     background-color: #DBDBDB;
+    padding: 5px;
 }
 
-.greyText{
+.greyBox h5{
     justify-content: space-between;
     padding: 10px;
 }
@@ -208,10 +212,24 @@ line-height: 12px;
     color: #E2A800;
 }
 
-.ourTeam{
+.teamBox{
     display: flex;
-    align-items: flex-start;
-    color: #E2A800;
+    margin-top: 80px;
+    background-color: #E2A800;
+    padding: 10px;
+    height: 46px;
+    width: 190px;
+    align-items: center;
+    color: white;
+    rotate: 90deg;
+    grid-area: team;
+}
+
+.cards{
+    display: grid;
+    grid-template-rows: "300px";
+    grid-template-columns: "50px 200px 200px 200px 200px 200px";
+    grid-template-areas: "team card1 card2 card3 card4 card5";
 }
 
 .w3-card{
@@ -219,17 +237,47 @@ line-height: 12px;
     height: 240px;
     background-color: #DBDBDB;
     box-shadow: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    margin-left: 164px;
+    color: #e2a800;
+    text-align: center;
 }
-.ourTeam h1{
-    background-color: #E2A800;
-    height: 46px;
-    padding: 10px;
-    rotate: 90deg;
-    color: white;
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
 }
 
+.where{
+    display: block;
+    margin-top: 80px;
+    color: #e2a800;
+}
+.where h6{
+    position: relative;
+    width: 255px;
+    height: 30px;
+    left: 580px;
+    top: -320px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #E2A800;
+    padding: 5px;
+    margin: 0;
+}
+.where img{
+    display: block;
+    margin: 0 auto;
+    height: 411px;
+}
 /* Programs */
 
 
@@ -271,7 +319,8 @@ line-height: 12px;
 }
 
 .sectiondivider {
-    display: block;
+    display: flex;
+    align-items: center;
     background-color: #E2A800;
     width: 100%;
     height: 46px;
@@ -279,8 +328,9 @@ line-height: 12px;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
-    line-height: 24px;
+    line-height: 46px;
     letter-spacing: -0.05em;
+    text-indent: 25px;
 }
 
 
@@ -359,12 +409,7 @@ line-height: 12px;
 
 
 /* contact */
-
-.sectionContact{
-    height: 46px;
-}
-
-.section h3{
+.form h3{
     margin-left: 20px;
     margin-top: 12px;
 }
@@ -428,10 +473,48 @@ line-height: 12px;
 
 .form{
     display: grid;
-    margin-left: 20px;
     color: white;
+    grid-template-rows: 37px 107px 37px 107px 37px 207px 100px;
+    grid-template-columns: 406px 406px;
+    grid-template-areas: 
+                    "nameText LnameText"
+                    "nameBox LnameBox"
+                    "emailText emailText"
+                    "emailBox emailBox"
+                    "msgText msgText"
+                    "msgBox msgBox"
+                    "formSubmit formSubmit";
+    justify-content: center;
+}
+.nameText{
+    grid-area: nameText;
+}
+.nameBox{
+    grid-area: nameBox;
+}
+.LnameText{
+    grid-area: LnameText;
+}
+.LnameBox{
+    grid-area: LnameBox;
+    margin-left: 12px;
+}
+.emailText{
+    grid-area: emailText;
+}
+.emailBox{
+    grid-area: emailBox;
+}
+.msgText{
+    grid-area: msgText;
+}
+.msgBox{
+    grid-area: msgBox;
 }
 
+.formSubmit{
+    grid-area: formSubmit;
+}
 
 /*footer*/
 .footer {

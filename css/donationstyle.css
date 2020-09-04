@@ -156,12 +156,39 @@ line-height: 12px;
         grid-column: 1;--
         /*^position in greater grid^*/
         display: grid;
-        grid-template-rows: 41px, auto, auto;
-        grid-template-columns: 2;
-        grid-row-gap: 0, 17px;
-        padding: 30px;
+        grid-template-rows: 25px, auto, auto;
+        grid-template-columns: 290px, 290px;
+        justify-content: unset;
+        align-content: unset;
+        grid-row-gap: 4px, 4px;
+        grid-column-gap: 18px;
+        padding-right: 40px;/* < < < get proper bottom padding px count*/
+        padding-left: 30px;
+        padding-bottom: 30px;/* < < < get proper bottom padding px count*/
         width: 668px;
         height: 300px;
+        border: 1px solid #E2A800;
+        box-sizing: border-box;
+        border-radius: 0px;
+    }
+
+/*.spaceOne, 35px (this is a marker)*/
+
+    .billingInformation{
+        /*---grid-row: 4;
+        grid-column: 1;--
+        /*^position in greater grid^*/
+        display: grid;
+        grid-template-rows: 24px, auto, auto, auto, auto, auto, 174px;/*7*/
+        grid-template-columns: auto, auto, 190px;/*3*/
+        grid-row-gap: 10px;
+        grid-column-gap: auto;
+        /*align-content: ;*/
+        padding-left: 35px;
+        padding-bottom: 60px;
+        padding-top: 12px;
+        width: 668px;
+        height: 677px;
         border: 1px solid #E2A800;
         box-sizing: border-box;
         border-radius: 0px;
