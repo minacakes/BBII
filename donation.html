@@ -43,6 +43,7 @@
             <p>Choose an amount:</p>
         </div>
     <form>
+        <!--add CLASS and ID for Form segments for section IDs-->
             <!--<div class="setAmounts">-->
                     <div class="tenButton">
                     <style>
@@ -337,6 +338,9 @@
                         grid-row: 1;
                         grid-column-start: 1;
                         grid-column-end: 2;
+                        padding-bottom: 0px;
+                        align-self: start;
+                        justify-self: left;
                     }
                 </style>
         </div>
@@ -345,6 +349,8 @@
                 .payPalButton{
                     grid-row: 1;
                     grid-column: 2;
+                    align-self: center;
+                    justify-self: right;
                     border: 2px solid #E2A800;
                     box-sizing: border-box;
                     border-radius: 25px;
@@ -358,9 +364,8 @@
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 0px;
+                    line-height: 0px;/* < < < 36px ORIGINALLY*/
                     text-align: start;
-                    align-self: center;
                     color: #FFFFFF;
                 }
             </style>
@@ -370,23 +375,28 @@
             <style>
                 .ccNumberPaymentInfo{
                     grid-row: 2;
-                    grid-column: 1;
+                    grid-column: 1 / span 2;
                     /*justify-self: ;*/
                     justify-self: left;
+                    align-self: start;
+                    /*padding-top: ;
+                    padding-bottom: ;*/
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 30px;/* <<< 36px ORIGINALLY*/
+                    line-height: 30px;/* < < < 36px ORIGINALLY*/
+                    width: 591px;
+                    height: 18px;/* < < < 30px ORIGINALLY*/
                     color: #FFFFFF;
                 }
-                input [type="text" id="ccNumberPaymentInfo" name="ccNumberPaymentInfo" class="ccNumberPaymentInfo"]{
+                /*input [<type="text"> id="ccNumberPaymentInfo" name="ccNumberPaymentInfo"]{
                     width: 591px;
-                    height: 5px;
-                }
+                    height: ;
+                }*/
             </style>
             <label for="ccNumberPaymentInfo">Credit Card Number</label><br>
-            <input type="text" id="#ccNumberPaymentInfo" name="ccNumberPaymentInfo" class="ccNumberPaymentInfo">
+            <input type="text" id="ccNumberPaymentInfo" name="ccNumberPaymentInfo" class="ccNumberPaymentInfo">
         </div>
         <div class="cvvNumberPaymentInfo">
             <style>
@@ -394,12 +404,14 @@
                     grid-row: 3;
                     grid-column: 2;
                     justify-self: right;
-                    align-self: center  ;
+                    align-self: start;
+                    padding-top: 28px;
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
                     line-height: 30px;/* <<< 36px ORIGINALLY*/
+                    height: 18px;
                     color: #FFFFFF;
                 }
                 input [type=text]{
@@ -414,6 +426,7 @@
                 .expDatePaymentInfo{
                     grid-row: 3;
                     grid-column: 1;
+                    padding-top: 28px;
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
@@ -487,6 +500,7 @@
                 .billingInfoHeader{
                     grid-row: 1;
                     grid-column: 1;
+                    padding-bottom: 0px;/*????????*/
                 }
             </style>
         </div>
@@ -496,19 +510,22 @@
                     .firstName{
                     grid-row: 2;
                     grid-column: 1;
+                    align-self: start;
+                    justify-content: start;
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
                     line-height: 36px;
+                    width: 30px;
                     color: #FFFFFF;
                     }
-                    input [type=text]{
+                    /*input [type=text]{
                     width: 591px;
-                    }
+                    }*/
                     </style>
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
                 </div>
                 <div class="lastName">
                     <style>
