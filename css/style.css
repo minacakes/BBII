@@ -120,32 +120,63 @@ line-height: 12px;
 }
 
 /*HOME*/
-
-#homesec{
+.section{
     display: block;
-    align-items: center;
-    height: auto;
-    left: -9.96px;
-    top: 731.84px;
-    color: #474747;
-    width: auto;
 }
 
+#homesec{
+    align-items: center;
+    color: #474747;
+    width: auto;
+    height: 640px;
+}
 
 .sloganCard{
     position: relative;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
-    left: 38.93px;
-    top: -690px;
+    top: -580px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
     border-radius: 10px;
 }
 
-.sloganText{
-    font-size: 24px;
-    text-decoration:  white;
+.SloganText{
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1px;
+    text-transform: uppercase;
+}
+.yellow{
+    color: #E2A800;
+}
+.yellowlg{
+    font-size: 60px;
+    color: #E2A800;
+    line-height: -30px;
+}
+.white{
+    color: #FFFFFF;
+    letter-spacing: -1px;
+}
+
+.impactCard{
+    position: relative;
+    width: 600px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #E2A800;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border: 1px solid #E2A800;
+    border-radius: 10px;
+    margin-left: 550px;
+    top: -500px;
+    
 }
 
 .smallHero{
@@ -161,7 +192,7 @@ line-height: 12px;
     width: 258.33px;
     height: 226.48px;
     left: 38.93px;
-    top: -600px;
+    top: 100px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
     border-radius: 10px;
@@ -565,7 +596,7 @@ line-height: 12px;
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:450px){
     .hero img{
         display: none;
     }
