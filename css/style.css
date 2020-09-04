@@ -150,15 +150,16 @@ line-height: 12px;
 
 /*HOME*/
 
-.homesec{
+#homesec{
     display: block;
     align-items: center;
-    background-color: #E2A800;
     height: auto;
     left: -9.96px;
     top: 731.84px;
     color: #474747;
+    width: auto;
 }
+
 
 .sloganCard{
     position: relative;
@@ -176,11 +177,12 @@ line-height: 12px;
     text-decoration:  white;
 }
 
-
+.smallHero{
+    display: none;
+}
 /*ABOUT US*/
 #aboutUSsec{
     display: grid;
-    height: 783px;
 }
 
 .ourWork{
@@ -588,4 +590,17 @@ line-height: 12px;
 .bottomtext {
     text-align: center;
     color: #E2A800;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:500px){
+    .hero img{
+        display: none;
+    }
+
+    .smallHero{
+        display: block;
+    }
+
 }

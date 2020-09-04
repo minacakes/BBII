@@ -4,29 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAYHF redesign</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
-    <!-- Latest compiled and minified CSS -->
-    
 </head>
 
     <!--Global Nav--> 
 <header class="TopNav">
     <div class="fixed-header">
-            <nav class="navbar navbar-default">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><link href="#homesec"><img src="Images/Copy of Logo Transparent.png"></a>
-                  </div>
-                  <ul class="nav navbar-nav">
-                    <li><a href="#aboutUSsec">About us</a></li>
-                    <li><a href="#secLatest">The Latest</a></li>
-                    <li><a href="#Programssec">Programs</a></li>
-                    <li><a href="#ContactUsSec">Contact Us</a></li>
-                  </ul>
-              </nav>
-</header>
+        <div class="container">
+            <nav>
+                <ul class="NavButtons">
+                <div class="aayhfLogo" href="#home"><img src="Images/aayhf_logo_bg.PNG"></div>
+                <li href="#aboutHeader"><h2>About Us</h2></li>
+                <li href="#secLatest"><h2>The Latest</h2></li>
+                <li href="#"><h2>Programs</h2></li>
+                <li href="#"><h2>Contact Us</h2></li>
+                </ul>
+                <style>
+                    .NavButtons{
+                        list-style: none;
+                    }
+                    .aayhfLogo{
+                        display:flex;
+                        top: 0;
+                    }
+                    .topnav{
+                        display:block;
+                        height: 150px;
+                    }
     
+                </style>
+            </nav>
+        </div>
+<header>
+    <div class="topnav">
+        <li class="NavButtons">
+            <row>
+                <a class="Logo" href="#homesec"><img src="Images/Copy of Logo Transparent.png"></a>
+                <a href="#aboutUs"><h2>About Us</h2></a>
+                <a href="#secLatest"><h2>The Latest</h2></a>
+                <a href="#Programssec"><h2>Programs</h2></a>
+                <a href="#ContactUsSec"><h2>Contact Us</h2></a>
+                <a class="DonateMenuButton" href="donation.html"><h2>Donate</h2></a>
+            </row>
+        </li>
+    </div>
+</header>
 
 
 <body>
@@ -34,20 +57,25 @@
     <!--Home-->
     <div class="section">
         <section class="home">
-            <section id="homesec">
-                <div><img src="Images/Hero.png"></div>
-                <div class="sloganCard">
-                    <div class="SloganText">
-                        <p class="yellow">Changing Lives</p>
-                        <p class="white">Building Better</p>
-                        <p class="yellowlg">Futures</p>
-                    </div>
+        <img src="">
+        <h2>Slogan Here</h2>
+        <h2>Impact Statment</h2>
+
+        <section id="homesec">
+            <div class="hero"><img src="Images/Hero.png" width="100%" height="auto"></div>
+            <div class="smallHero"><img src="images/small_hero.png" alt=""></div>
+            <div class="sloganCard">
+                <div class="SloganText">
+                    <p class="yellow">Changing Lives</p>
+                    <p class="white">Building Better</p>
+                    <p class="yellowlg">Futures</p>
                 </div>
-                <div class="impactCard">
-                    <div class="impactText">
-                        <p class="yellow">Local, Hands-on Programs Designed to improve the lives of Austin’s African-american and Under-served Communities</p>
-                    </div>
+            </div>
+            <div class="impactCard">
+                <div class="impactText">
+                    <p class="yellow">Local, Hands-on Programs Designed to improve the lives of Austin’s African-american and Under-served Communities</p>
                 </div>
+            </div>
         </section>
     </div>
     <style>
@@ -95,7 +123,7 @@
  
 
     <!--About Us-->
-        <section id="aboutUSsec">
+    <section id="aboutUSsec">
             <div class="sectiondivider">
                 <h3>About Us</h3>
             </div>
@@ -103,12 +131,12 @@
             <div class="ourWork"> <h1 style="line-height: 12pt;">OUR WORK</h1>
                     <h5>AAYHF is positioned to effectively leverage community resources to address significant barriers impacting the quality of life for residents in the Eastern Crescent of the City of Austin.</h5>
             </div>
-        </section>
         
-        <section class="greyBox">
+        
+        <div class="greyBox">
                 <h5>Since 2006, AAYHF, a community-based organization, spearheads mission-aligned and strategic collaborative initiatives to ensure low barrier access to vital resources intended to transition youth and their families to self-sufficiency and community defined success that effectually addresses the social determinants of health, educational success and economic stability throughout the most vulnerable neighborhoods in the City of Austin and Travis County. </h5>
                 <h5>Vulnerabilities made evident by notable disparities and disproportionalities fueled by the conditions in which these community members are born, age, grow, work, live, and the wider set of forces and systems shaping the conditions of their daily life. </h5>
-        </section>
+        </div>
         
         <div id="statistics">
             <div class="stat"><img src="images/boywithball.png">
@@ -163,6 +191,7 @@
             <img src="images/map.png">
             <h6 style="text-align: center;">6633 E. Hwy 290, Austin, TX</h6>
         </div>
+    </section>
 
     <!--Latest-->
 
