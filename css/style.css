@@ -163,6 +163,7 @@ line-height: 12px;
 }
 
 #homesec{
+    background-image: url("Images/Hero.png");    
     align-items: center;
     color: #474747;
     width: 100%;
@@ -170,20 +171,25 @@ line-height: 12px;
 }
 
 .sloganCard{
-    position: absolute;
-    bottom: auto;
-    top: 0;
-    margin-top: 100px;
-    width: 100%;
-    padding: 10px;
+    position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E2A800;
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #E2A800;
-    border-radius: 10px;
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 10px;    
+    margin-top: -650px;
 }
 
 .SloganText{
+
     font-size: 32px;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
     font-family: 'Overpass', sans-serif;
     font-style: normal;
@@ -193,20 +199,25 @@ line-height: 12px;
 }
 .yellow{
     color: #E2A800;
+    font-size: 24pt;
+    letter-spacing: 1.5pt;
 }
 .yellowlg{
     font-size: 60px;
     color: #E2A800;
-    line-height: -30px;
+    letter-spacing: 2px;
+    line-height: -30pt;
 }
+
 .white{
     color: #FFFFFF;
-    letter-spacing: -1px;
+    font-size: 24pt;
+    letter-spacing: 1px;
 }
 
 .impactCard{
     position: relative;
-    width: 600px;
+    width: fit-content;
     text-align: right;
     text-transform: uppercase;
     color: #E2A800;
@@ -214,8 +225,9 @@ line-height: 12px;
     padding: 10px;
     border: 1px solid #E2A800;
     margin-left: 550px;
+    margin-right: 20px;
     border-radius: 10px;    
-    margin-top: -200px;
+    margin-top: 300px;
 }
 
 
