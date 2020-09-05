@@ -15,9 +15,9 @@
 
 <h1 class="h1Donation">MAKE A DONATION TO AAYHF</h1>
 
-<div class="donationForm">
+<!--<div class="donationForm">-->
 <!--Can the greater form have div tags within it??? 8/31/20-->
-<form class="donationForm" action="/action_page.php" target="_blank"><!--Greater form beginning (verify attributes???-8/29/20)-->
+<!--<form class="donationForm" action="/action_page.php" target="_blank"><!--Greater form beginning (verify attributes???-8/29/20)-->
 
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -42,8 +42,7 @@
             </style>
             <p>Choose an amount:</p>
         </div>
-    <form>
-        <!--add CLASS and ID for Form segments for section IDs-->
+    <form class="form" id="amount"><!-- < < < -->
             <!--<div class="setAmounts">-->
                     <div class="tenButton">
                     <style>
@@ -202,7 +201,7 @@
             </style>
             <p>Choose a Frequency</p>
         </div>
-    <!--<form>-->
+        <form class="form" id="frequency"><!-- < < < --><!--<form>-->
             <div class="oneTime">
                 <style>
                     .oneTime {
@@ -272,7 +271,7 @@
                 <element class="annually"></element>
                 <label for="annually">Annually</label>
             </div>
-    </form>
+        </form>
     </div><!--chooseAFrequency END-->
 
 
@@ -329,54 +328,60 @@
             .cvvNumberPaymentInfo{
             }
     </style>-->
+    <form class="form" id="payment"><!-- < < < -->
+    <div class="paymentInformation">
 
-    <div class="paymentInformation"><!--style="width: 668px; height: 259px; left: 235px; top: 1132px; border: 1px solid #E2A800; box-sizing: border-box;"-->
+    
+
         <div class="paymentInfoHeader"><!--ENTER TEXT STYLING + LINE HEIGHT!!!-->
                 <h6 class="formLabel">Payment Information<br>(Required)</h6>
                 <style>
                     .paymentInfoHeader{
-                        grid-row: 1;
-                        grid-column-start: 1;
-                        grid-column-end: 2;
-                        padding-bottom: 0px;
-                        align-self: start;
+                        grid-column: 1 / 2;
+                        /*align-self: start;*/
                         justify-self: left;
                     }
                 </style>
         </div>
-        <div class="payPalButton">
+
+        <!--<form class="form" id="payment"><!-- < < < -->
+
+        <div class="payPal">
             <style>
-                .payPalButton{
-                    grid-row: 1;
-                    grid-column: 2;
-                    align-self: center;
+                .payPal{
+                    grid-column: 2 / ;
                     justify-self: right;
-                    border: 2px solid #E2A800;
-                    box-sizing: border-box;
-                    border-radius: 25px;
-                    width: 145px;
-                    height: 41px;
-                    padding-top: 2px;
-                    padding-bottom: 12px;
-                    padding-left: 54px;
-                    padding-right: 40px;
-                    font-family: Overpass;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 0px;/* < < < 36px ORIGINALLY*/
-                    text-align: start;
-                    color: #FFFFFF;
                 }
             </style>
-            <p>Paypal</p>
+            <button class="payPalButton">PayPal
+                <style>
+                    .payPalButton{
+                        background-color: transparent;
+                        border: 2px solid #E2A800;
+                        /*box-sizing: border-box;*/
+                        border-radius: 25px;
+                        width: 145px;
+                        height: 41px;
+                        padding-top: 2px;
+                        padding-bottom: 12px;
+                        font-family: Overpass;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 36px;/* < < < 36px ORIGINALLY*/
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                </style>
+            </button>
+            
         </div>
+
         <div class="ccNumberPaymentInfo">
             <style>
                 .ccNumberPaymentInfo{
-                    grid-row: 2;
-                    grid-column: 1 / span 2;
-                    /*justify-self: ;*/
+                    grid-column: 1 / span 3;
+                    /*justify-self: ;
                     justify-self: left;
                     align-self: start;
                     /*padding-top: ;
@@ -385,64 +390,62 @@
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 30px;/* < < < 36px ORIGINALLY*/
-                    width: 591px;
+                    line-height: 36px;/* < < < 36px ORIGINALLY*/
+                    /*width: 591px;
                     height: 18px;/* < < < 30px ORIGINALLY*/
                     color: #FFFFFF;
                 }
-                /*input [<type="text"> id="ccNumberPaymentInfo" name="ccNumberPaymentInfo"]{
+                .ccNumber{
                     width: 591px;
-                    height: ;
-                }*/
+                    /*height: 18px;*/
+                }
+                /*label.ccNumber{}*/
             </style>
-            <label for="ccNumberPaymentInfo">Credit Card Number</label><br>
-            <input type="text" id="ccNumberPaymentInfo" name="ccNumberPaymentInfo" class="ccNumberPaymentInfo">
+            <label for="ccNumber">Credit Card Number</label><br>
+            <input type="text" name="ccNumber" class="ccNumber"><!--id="ccNumber"-->
         </div>
+
         <div class="cvvNumberPaymentInfo">
             <style>
                 .cvvNumberPaymentInfo{
-                    grid-row: 3;
-                    grid-column: 2;
+                    grid-column: 2 / 3;
                     justify-self: right;
-                    align-self: start;
-                    padding-top: 28px;
+                    align-self: center;
+                    /*padding-top: 28px;*/
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 30px;/* <<< 36px ORIGINALLY*/
+                    line-height: 36px;/* <<< 36px ORIGINALLY*/
                     height: 18px;
                     color: #FFFFFF;
                 }
-                input [type=text]{
-                    width: 591px;
-                }
             </style>
             <label for="cvvNumber">CVV Number</label><br>
-            <input type="text"id="cvvNumber" name="cvvNumber">
+            <input type="text" name="cvvNumber" class="cvvNumber"><!--id="cvvNumber"-->
         </div>
+
         <div class="expDatePaymentInfo">
             <style>
                 .expDatePaymentInfo{
-                    grid-row: 3;
-                    grid-column: 1;
-                    padding-top: 28px;
+                    grid-column: 1 / 2;
+                    justify-self: left;
                     font-family: Overpass;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 18px;
-                    line-height: 30px;/* <<< 36px ORIGINALLY*/
+                    line-height: 36px;/* <<< 36px ORIGINALLY*/
                     color: #FFFFFF;
-                }
-                input [type=text]{
-                    width: 591px;
                 }
             </style>
             <label for="expDate">Expiration Date</label><br>
-            <input type="text" id="expDate" name="expDate">
+            <input type="text" name="expDate" class="expDate"><!--id="expDate"-->
         </div>
-    </div><!--paymentInformation END-->
 
+    
+
+    </div><!--paymentInformation END-->
+    </form>
 
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -505,6 +508,7 @@
             </style>
         </div>
         <!--<form>-->
+            <form class="form" id="billing"><!-- < < < -->
                 <div class="firstName">
                     <style>
                     .firstName{
@@ -712,9 +716,9 @@
     
 <!----------------------------------------------------------------------------------------------------------------------------->
 
-</form><!--Greater form END-->
+<!--</form><!--Greater form END-->
 
-</div><!--Make_a_Donation END-->
+<!--</div><!--donationForm END-->
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 
