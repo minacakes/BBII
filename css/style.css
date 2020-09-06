@@ -495,12 +495,20 @@ label {
   }
 
   input, select {
-    color: black;
     border-style: solid;
     border-color: #E2A800;
   }
+
   input::placeholder {
     color: darkgrey;
+  }
+
+  input[type=text] {
+      color: black;
+  }
+
+  input, select[type=text] {
+    color: darkgray;
   }
 
 
@@ -706,3 +714,21 @@ label {
         display: block;
     }
 }
+
+@media only screen and (max-width:600px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    #whatwedo {
+        padding-bottom: 0px;
+    }
+    
+    #getinvolved {
+        padding-bottom: 20px;
+    }
+
+    }
+    
