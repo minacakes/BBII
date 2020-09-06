@@ -397,12 +397,15 @@ line-height: 12px;
  }
  .LatestCard {
      display: grid;
-     grid-template-columns: 50% 50%;
-     margin: 20px;
-     width: 800px;
+     align-self: center;
+     grid-template-columns: 40% 30% 30%;
+     margin: 20px;  
+     width: 80%;
      padding: 10px 10px;
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
      border-radius: 10px;
+     background-color: #888888;
+     
  }
 
  .card:hover {
@@ -411,12 +414,22 @@ line-height: 12px;
 
  .container {
  padding: 2px 16px;
+ width: 360px;
+ text-overflow: ellipsis;
  }
 
+.LatestText{
+    display: flex;
+    width: 45%;
+    text-overflow: ellipsis;
+}
  .latestPhoto{
      width: 25%;
  }
 
+ .LatestTitle {
+     color: #E2A800;    
+ }
 
 /* Programs */
 
