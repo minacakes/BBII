@@ -595,7 +595,6 @@ label {
     grid-area: map;
 }
 
-
 .map{
     display: grid;
     color: #E2A800;
@@ -617,6 +616,22 @@ label {
                     "formSubmit formSubmit";
     justify-content: center;
 }
+
+.name{
+    width: 388px;
+    height: 75px;
+}
+
+.emailBox{
+    width: 812px;
+    height: 75px;
+}
+
+.msgBox{
+    width: 812px;
+    height: 200px;
+}
+
 .nameText{
     grid-area: nameText;
 }
@@ -697,6 +712,8 @@ label {
     display: none;
 }
 
+
+
 @media only screen and (max-width:450px){
     .hero img{
         display: none;
@@ -705,4 +722,5 @@ label {
     .smallHero{
         display: block;
     }
+    
 }
