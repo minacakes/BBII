@@ -7,10 +7,12 @@
  \___ |_| |_|(_)| (___/
 (_____|       (_*/
 
-var gif = new GIF({
+/*var gif = new GIF({
   workers: 2,
   quality: 10
 });
 
 // add an image element
-gif.addFrame(imageElement);
+gif.addFrame(imageElement);*/
+
+document.body.style.background = "url('https://media0.giphy.com/media/3ohhwznSVuwXu6RnEY/giphy.gif')";
