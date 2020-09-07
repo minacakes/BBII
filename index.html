@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAYHF redesign</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
     <!--Global Nav--> 
@@ -51,7 +54,7 @@
             </div>
           </nav>-->
        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--<nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#homesec"><img src="images/Copy of Logo Transparent.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -65,7 +68,59 @@
               </div>
             </div>
           </nav>
-    </header>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+        </nav>
+    </header>-->
+<header>
+    <div class="bd-example">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="centeredLogo"><img id="AAYHFLogo" href="#homesec" src="Images/Copy of Logo Transparent.png"></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutUSsec">About Us<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#secLatest">The Latest</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Programssec">Programs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ContactUsSec">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+</header>
 
 
 
@@ -74,16 +129,18 @@
    
     <!--Home-->
         <section id="homesec">
-                <div class="heroImage"><img src="Images/Hero.png" width="100%"></div>
+                
                 <div class="hero">
-                         <div class="sloganCard">
-                            <div class="yellow">Changing Lives</div>
-                            <div class="white">Building Better</div>
-                            <div class="yellowlg">Futures</div>
-                        </div>
-                    <div class="impactCard">
-                        <h3>Local, Hands-on Programs Designed to improve the lives of Austin’s African-american and Under-served Communities</h3>
-                    </div>    
+                    <div class="heroImage"><img src="Images/Hero.png" width="100%"></div>
+                            <div class="sloganCard">
+                                <div class="yellow">Changing Lives</div>
+                                <div class="white">Building Better</div>
+                                <div class="yellowlg">Futures</div>
+                            </div>
+                        <div class="impactCard">
+                            <h3>Local, Hands-on Programs Designed to improve the lives of Austin’s African-american and Under-served Communities</h3>
+                        </div>    
+                    </div>
                 </div>
         </section>
    
