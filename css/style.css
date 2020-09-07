@@ -89,8 +89,12 @@ line-height: 12px;
 
 
 /*Bootstrap NAVBAR*/
-
-.sticky {
+.bd-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+}
+.navbar {
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -106,12 +110,16 @@ line-height: 12px;
     width: auto;
 }
 
+.navbar-Nav {
+    list-style: none;
+}
 .navbar {
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
-    height: 85px;
+    height: fit-content;
     bottom: 85px;   
+    width: 100%;
     border-bottom: 1px solid #e2a800;
     text-align: center;
 
@@ -123,29 +131,68 @@ line-height: 12px;
 
 .nav-item {
     float: left;
-    text-align: center;
-    display: flex;
-    padding: 16pt;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
 }
 
 .nav-link{
+    display: grid;
+    grid-column: 1;
+    grid-row: 5;
     float: left;
     padding: 16pt;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
+    width: 100%;
+    line-height: 18pt;
 }
+
+.collapse {
+    width: 100%;
+}
+
+.mr-auto {
+    display: block;
+}
+
 
 .nav-link-green {
     color: green;
     text-align: center;
-    padding: 16pt;
 }
 
 .green {
     color: rgb(0, 128, 0)
 }
 
+.centeredLogo {
+    position: sticky;
+    z-index: 0;
 
+}
+/*.navbar-brand {
+    display: inline;
+    padding: 5px;
+    margin-top: 0;
+}   
+*/
+.navbar-Nav{
+    align-items: left;
+}
+
+.AAYHFLogo{
+    position: relative;
+    
+}
+.bd-example{
+    align-content: left;
+}
+.navbar-expand-lg {
+    display: block;
+    align-items: flex-start;
+}
 /*Body*/
 
 .bodyRules {
@@ -157,7 +204,7 @@ line-height: 12px;
 
 .hero {
     display: flex;
-    position: absolute;
+    position: relative;
     background-image: url("../Images/Hero.png");
     background-size: 100%;
     width: 100%;
@@ -176,7 +223,7 @@ line-height: 12px;
 }
 
 .sloganCard{
-    position: relative;
+    position: absolute;
     width: fit-content;
     height: fit-content;
     text-align: center;
@@ -186,10 +233,12 @@ line-height: 12px;
     border: 1px solid #E2A800;
     padding: 5px;
     margin-left: 20px;
+    margin-top: 20%;
     border-radius: 10px;    
     top: 0px;
     line-height: 30pt;
-    margin-top: -40%;
+    top: 0px;
+    
     
 }
 
@@ -233,11 +282,12 @@ line-height: 12px;
     padding: 10px;
     border: 1px solid #E2A800;
     border-radius: 10px;    
-    margin-top: -20%;
+    margin-top: 40%;
     width: 60%;
     margin-left: 39%;
-    z-index: 1;
+    
 }
+
 
 
 /*ABOUT US*/
